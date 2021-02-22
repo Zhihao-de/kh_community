@@ -1,0 +1,92 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/cart/cart",
+    "pages/public/login",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/money/money",
+    "pages/order/createOrder",
+    "pages/address/address",
+    "pages/address/addressManage",
+    "pages/money/pay",
+    "pages/money/paySuccess",
+    "pages/notice/notice",
+    "pages/category/category",
+    "pages/product/list",
+    "pages/intention/intention",
+    "pages/intention/intention_customer",
+    "pages/application/application",
+    "pages/application/manageApplication",
+    "pages/order/orderDetail",
+    "pages/intention/intentionDetail",
+    "pages/order/createIntention",
+    "pages/application/application_detail",
+    "pages/intention/intentionDetail_customer",
+    "pages/money/payment",
+    "pages/application/picFront",
+    "pages/application/picBack",
+    "pages/location/location",
+    "pages/account/account",
+    "pages/account/manageAccount",
+    "pages/location/getLocation",
+    "pages/documents/documents",
+    "pages/order/orderLogistic",
+    "pages/application/gender",
+    "pages/user/showImg",
+    "pages/user/user2",
+    "pages/money/refund"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#fa436a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/main.png",
+        "selectedIconPath": "./static/main-current.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "static/tab-cate.png",
+        "selectedIconPath": "static/tab-cate-current.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/location/location",
+        "iconPath": "static/community.png",
+        "selectedIconPath": "static/community-current.png",
+        "text": "社区信息"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/tab-cart.png",
+        "selectedIconPath": "static/tab-cart-current.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user2",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user-current.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {},
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {}
+}

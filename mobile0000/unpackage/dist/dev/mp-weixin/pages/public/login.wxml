@@ -1,0 +1,1 @@
+<view class="container"><view class="left-bottom-sign"></view><view class="right-top-sign"></view><view class="wrapper"><view class="left-top-sign">LOGIN</view><view class="welcome">开皇社区</view><button class="confirm-btn" open-type="getUserInfo" data-event-opts="{{[['getuserinfo',[['wxLogin',['$event']]]]]}}" bindgetuserinfo="__e">授权并登陆</button></view></view>

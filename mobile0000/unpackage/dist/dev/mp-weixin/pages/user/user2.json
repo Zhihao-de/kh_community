@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "详细功能",
+  "usingComponents": {
+    "list-cell": "/components/mix-list-cell"
+  }
+}

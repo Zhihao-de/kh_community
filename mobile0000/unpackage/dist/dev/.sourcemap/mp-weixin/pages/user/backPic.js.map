@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:////Users/Wang/Documents/kh0612/kh_community/mobile/main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,+M;AACAA,UAAU,CAACC,gBAAD,CAAV,C","file":"pages/user/backPic.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/user/backPic.vue'\ncreatePage(Page)"],"sourceRoot":""}

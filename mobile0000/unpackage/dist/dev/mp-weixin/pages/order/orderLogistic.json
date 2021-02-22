@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "logistics": "/components/xinyu-logistics/xinyu-logistics"
+  }
+}

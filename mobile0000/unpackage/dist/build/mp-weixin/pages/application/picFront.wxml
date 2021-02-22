@@ -1,0 +1,1 @@
+<view class="content"><block wx:if="{{flag==0}}"><view class="box"><image src="{{sub_imageSrc}}" data-event-opts="{{[['tap',[['chooseImage']]]]}}" bindtap="__e"></image></view></block><block wx:else><view class="box"><image src="{{imageSrc}}" data-event-opts="{{[['tap',[['chooseImage']]]]}}" bindtap="__e"></image></view></block></view>

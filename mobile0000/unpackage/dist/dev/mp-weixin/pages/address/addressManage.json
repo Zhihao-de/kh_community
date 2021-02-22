@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "管理地址",
+  "usingComponents": {
+    "pick-regions": "/components/pick-regions/pick-regions"
+  }
+}

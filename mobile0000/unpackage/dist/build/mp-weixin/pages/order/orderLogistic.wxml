@@ -1,0 +1,1 @@
+<view><view class="content"><logistics vue-id="9e5b1fbc-1" wlInfo="{{wlInfo}}" bind:__l="__l"></logistics></view></view>

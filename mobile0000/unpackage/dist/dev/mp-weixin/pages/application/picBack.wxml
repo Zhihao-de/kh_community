@@ -1,0 +1,1 @@
+<view class="content"><block wx:if="{{flag==0}}"><image src="{{sub_imageSrc}}" mode="{{aspectFit}}" data-event-opts="{{[['tap',[['chooseImage']]]]}}" bindtap="__e"></image></block><block wx:else><image src="{{imageSrc}}" mode="{{aspectFit}}" data-event-opts="{{[['tap',[['chooseImage']]]]}}" bindtap="__e"></image></block></view>
