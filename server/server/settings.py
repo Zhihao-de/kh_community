@@ -218,7 +218,7 @@ WEIXIN_APPID = 'wxa20b6f7055206dd4'
 # 小程序SECRET
 WEIXIN_SECRET = 'd891da84557b9f77e03d8b66f53d88ed'
 
-'''
+
 LOGGING = {
      'version': 1,
      'disable_existing_loggers': False,
@@ -236,4 +236,4 @@ LOGGING = {
          },
      }
  }
-'''
+
