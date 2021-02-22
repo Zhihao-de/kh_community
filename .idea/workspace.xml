@@ -2,7 +2,489 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf70738-1423-4d20-9946-f39245f59e89" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/server/server/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/main.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/vendor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/empty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/empty.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/empty.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/empty.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/mix-list-cell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/mix-list-cell.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/mix-list-cell.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/mix-list-cell.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/pick-regions/pick-regions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/pick-regions/pick-regions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/pick-regions/pick-regions.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/share.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/share.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/share.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/share.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-badge/uni-badge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-badge/uni-badge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-badge/uni-badge.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-badge/uni-badge.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-icons/uni-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-icons/uni-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-icons/uni-icons.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-icons/uni-icons.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list-item/uni-list-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list-item/uni-list-item.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list-item/uni-list-item.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list-item/uni-list-item.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list/uni-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list/uni-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list/uni-list.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list/uni-list.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-load-more/uni-load-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-load-more/uni-load-more.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-load-more/uni-load-more.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-load-more/uni-load-more.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-number-box.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-number-box.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-number-box.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-number-box.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-transition/uni-transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-transition/uni-transition.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-transition/uni-transition.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-transition/uni-transition.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/xinyu-logistics/xinyu-logistics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/xinyu-logistics/xinyu-logistics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/xinyu-logistics/xinyu-logistics.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/xinyu-logistics/xinyu-logistics.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/account.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/account.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/account.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/manageAccount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/manageAccount.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/manageAccount.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/manageAccount.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/address.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/address.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/address.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/addressManage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/addressManage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/addressManage.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/addressManage.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application_detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application_detail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application_detail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application_detail.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/gender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/gender.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/gender.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/manageApplication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/manageApplication.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/manageApplication.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/manageApplication.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail_customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail_customer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail_customer.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail_customer.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention_customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention_customer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention_customer.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention_customer.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/getLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/getLocation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/getLocation.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/getLocation.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/notice/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/notice/notice.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/notice/notice.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/notice/notice.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createIntention.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createIntention.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createIntention.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createIntention.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/project.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap11.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap12.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap18.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap19.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap22.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap25.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap26.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap28.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap29.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap30.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap33.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap34.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap35.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap36.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap37.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap38.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap40.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap41.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap42.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap43.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap44.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap46.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap47.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap48.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap49.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap51.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap52.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap54.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap55.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap56.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap57.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap58.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap59.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap60.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap61.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap62.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap63.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap64.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap65.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap66.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap68.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap71.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap72.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap73.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap76.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap77.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap79.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap80.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap81.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap82.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap83.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap84.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap86.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap87.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap88.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap89.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap90.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap91.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap92.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap93.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap94.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap96.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap97.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap98.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/community-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/community.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/emptyCart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/liulian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/location.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/main-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/mark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/missing-face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/p.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/pos_b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/pos_r.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/tab-cart-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/tab-cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/tab-cate-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/tab-cate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/ad-splash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/ad1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/ad2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/ad3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/cate9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/h1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/secskill-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/share_moment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/share_qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/share_qqzone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/temp/share_wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/user-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/user-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/yixuan-selectAddress/city.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/yixuan-selectAddress/gou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/yticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/Json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/api/attachment_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/api/intention_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/api/mama_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/api/order_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/api/product_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/api/user_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/ImageUpload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/IntentionAssignmentsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/IntentionDetailsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/IntentionHistoryTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/IntentionsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/OrderDetailsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/OrderHistoryTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/OrderRouteEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/OrderRoutesTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/OrderTransactionsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/OrdersTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/ProductEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/ProductsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/UserApplicationsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/UserDocsTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/UserLocationEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/UsersTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/others/MamaTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/others/OrderEditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/components/others/UsersTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/intentions/IntentionDetailView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/intentions/IntentionsListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/login/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/orders/OrderDetailView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/orders/OrdersListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/products/ProductCategoryEditView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/products/ProductEditView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/products/ProductsListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/users/UserDetailView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/src/views/users/UsersListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/arc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/emptyCart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/errorImage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/missing-face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-cart-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-cate-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-cate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-home-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-my-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/tab-my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/ad-splash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/ad1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/ad2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/ad3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/cate9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/h1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/secskill-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/share_moment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/share_qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/share_qqzone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/temp/share_wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/user-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/vip-card-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/static/yticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cms/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +541,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/server/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4681">
-              <caret line="221" column="11" lean-forward="true" selection-start-line="221" selection-start-column="11" selection-end-line="239" />
+            <state relative-caret-position="237">
+              <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -1546,8 +2028,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="570" />
-    <option name="y" value="1" />
+    <option name="x" value="222" />
+    <option name="y" value="64" />
     <option name="width" value="1693" />
     <option name="height" value="1033" />
   </component>
@@ -1622,8 +2104,17 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="570" y="1" width="1693" height="1033" extended-state="0" />
+    <frame x="239" y="56" width="1693" height="1033" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -1633,7 +2124,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33741647" />
+      <window_info anchor="bottom" id="Terminal" weight="0.33741647" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1641,7 +2132,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32962137" />
       <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1672,8 +2163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4681">
-          <caret line="221" column="11" lean-forward="true" selection-start-line="221" selection-start-column="11" selection-end-line="239" />
+        <state relative-caret-position="237">
+          <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
         </state>
       </provider>
     </entry>
