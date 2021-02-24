@@ -2,9 +2,6 @@ import time
 
 from redis import StrictRedis
 
-from intentions.models import IntentionAssignmentsModel
-from orders.models import OrderModel
-
 
 def expire_assignmnet(assignment):
     assignment = IntentionAssignmentsModel.objects.get(intention__serial_number=assignment)

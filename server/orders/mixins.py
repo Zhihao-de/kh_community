@@ -5,7 +5,6 @@ from rest_framework.settings import api_settings
 
 from orders.models import OrderModel, OrderDetailModel, OrdersHistoryModel
 from products.models import ProductModel
-from until.listen import Daemon
 
 
 class OrderCreateModelMixin:

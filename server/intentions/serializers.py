@@ -3,9 +3,9 @@ import datetime
 import pytz
 from django.db import transaction
 from rest_framework import serializers
+from util.listen import Daemon
 
 from intentions.models import *
-from until.listen import Daemon
 
 
 class IntentionsReadOnlySerializer(serializers.ModelSerializer):
