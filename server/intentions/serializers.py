@@ -3,7 +3,6 @@ import datetime
 import pytz
 from django.db import transaction
 from rest_framework import serializers
-from util.listen import Daemon
 
 from intentions.models import *
 

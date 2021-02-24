@@ -69,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'server.urls'
@@ -175,7 +176,6 @@ REST_FRAMEWORK_EXTENSIONS = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        # "LOCATION": "redis://106.54.170.236:6379",
         "LOCATION": "redis://106.54.170.236:6379",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
@@ -218,22 +218,20 @@ WEIXIN_APPID = 'wxa20b6f7055206dd4'
 # 小程序SECRET
 WEIXIN_SECRET = 'd891da84557b9f77e03d8b66f53d88ed'
 
-
 LOGGING = {
-     'version': 1,
-     'disable_existing_loggers': False,
-     'handlers': {
-         'console': {
-             'level': 'DEBUG',
-             'class': 'logging.StreamHandler',
-         },
-     },
-     'loggers': {
-         'django.db.backends': {
-             'handlers': ['console'],
-             'propagate': True,
-             'level': 'DEBUG',
-         },
-     }
- }
-
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['console'],
+            'propagate': True,
+            'level': 'DEBUG',
+        },
+    }
+}
