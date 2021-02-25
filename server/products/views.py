@@ -16,14 +16,16 @@ class ProductsNumberPagination(PageNumberPagination):
     page_query_param = 'page'
 
 
+class ProductsUnitNumberPagination(PageNumberPagination):
+    page_size = 20
+    max_page_size = 25
+    page_size_query_param = 'page_size'
+    page_query_param = 'page'
+
+
 class ProductCategoryReadonlyViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = ProductCategoryModel.objects.all()
     serializer_class = ProductCategoriesReadonlySerializer
-
-
-class ProductsReadonlyViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = ProductModel.objects.filter(flags__in=[0])
-    serializer_class = ProductsReadonlySerializer
 
 
 class ProductCategoryViewSet(viewsets.ModelViewSet):
@@ -50,6 +52,11 @@ class ProductCategoryViewSet(viewsets.ModelViewSet):
             return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+class ProductsReadonlyViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = ProductModel.objects.filter(flags__in=[0])
+    serializer_class = ProductsReadonlySerializer
+
+
 class ProductsViewSet(viewsets.ModelViewSet):
     queryset = ProductModel.objects.all()
     serializer_class = ProductsSerializer
@@ -62,3 +69,15 @@ class ProductsViewSet(viewsets.ModelViewSet):
 
     def retrieve(self, request, *args, **kwargs):
         return super().list(request, args, kwargs)
+
+
+class ProductUnitViewSet(viewsets.ModelViewSet):
+    queryset = ProductUnitModel.objects.all()
+    serializer_class = ProductUnitSerializer
+
+    def get_queryset(self):
+        """
+        获得queryset，url中需含 P<order_id> 参数，且设置basename
+        :return:
+        """
+        return ProductUnitModel.objects.filter(product=self.kwargs['product_id'])

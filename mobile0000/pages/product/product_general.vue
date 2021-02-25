@@ -56,7 +56,8 @@
 			</view>
 			<rich-text :nodes="productObj.pic_urls"></rich-text>
 		</view>
-
+		<uni-popup class="popup_box" ref="popups" ,type="bottom">
+		</uni-popup>
 		<!-- 底部操作菜单 -->
 		<view class="page-bottom">
 			<navigator url="/pages/index/index" open-type="switchTab" class="p-b-btn">
@@ -65,13 +66,13 @@
 			</navigator>
 			<navigator url="/pages/cart/cart" open-type="switchTab" class="p-b-btn">
 				<text class="yticon icon-gouwuche"></text>
-				<text>购物车</text>
 			</navigator>
 
 
 			<view class="action-btn-group">
-				<button type="primary" class=" action-btn no-border buy-now-btn" @click="buy">立即购买</button>
-				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>
+				<button type="primary" class=" action-btn no-border buy-now-btn" @click="openPopup()">立即购买</button>
+				<!--<button type="primary" class=" action-btn no-border buy-now-btn" @click="pop">底部弹出</button>
+				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>-->
 			</view>
 		</view>
 	</view>
@@ -79,6 +80,12 @@
 
 <script>
 	export default {
+		components: {
+			uniPopup,
+			uniPopupMessage,
+			uniPopupDialog,
+			lxcCount
+		},
 		data() {
 			return {
 				specClass: 'none',
@@ -189,6 +196,10 @@
 				uni.redirectTo({
 					url: "/pages/category/category"
 				})
+			},
+			openPopup() {
+				this.$refs.popups.open();
+
 			},
 		},
 

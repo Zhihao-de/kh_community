@@ -4,7 +4,7 @@ from django.utils.deconstruct import deconstructible
 from rest_framework import serializers
 from rest_framework.utils.formatting import lazy_format
 
-from products.models import ProductModel, ProductCategoryModel
+from products.models import ProductModel, ProductCategoryModel, ProductUnitModel
 
 
 class ProductCategoriesReadonlySerializer(serializers.ModelSerializer):
@@ -23,7 +23,6 @@ class ProductsReadonlySerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductModel
         fields = '__all__'
-
 
 
 @deconstructible
@@ -74,10 +73,21 @@ class ProductsSerializer(serializers.ModelSerializer):
     purchase_price = serializers.FloatField()
     retail_price = serializers.FloatField()
 
-
     class Meta:
         model = ProductModel
         fields = '__all__'
 
 
+class ProductUnitSerializer(serializers.ModelSerializer):
+    code = serializers.CharField()
+    purchase_price = serializers.FloatField()
+    retail_price = serializers.FloatField()
+    weight = serializers.FloatField()
+    unit = serializers.CharField()
+    point = serializers.IntegerField()
+    attributes = serializers.CharField()
+    description = serializers.CharField(allow_blank=True)
 
+    class Meta:
+        model = ProductUnitModel
+        fields = '__all__'

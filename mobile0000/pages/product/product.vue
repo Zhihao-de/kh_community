@@ -22,7 +22,7 @@
 				<text class="price-tip">建议零售价：¥</text>
 				<text class="price">{{productObj.retail_price}}</text>
 			</view>
-		</view>  
+		</view>
 		<view class="c-list">
 			<view class="c-row b-b">
 				<text class="tit">购买数量</text>
@@ -73,21 +73,42 @@
 				<button v-else type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateIntention">
 					立即下单
 				</button>
+				<button type="primary" class=" action-btn no-border buy-now-btn" @click="toggle">立即购买</button>
 				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>
 			</view>
 		</view>
-
-
+		<view class="hide">
+			<uni-popup id="popup" ref="popup" type="bottom">
+				<view class="popup-content">
+					<view class="unit-title">
+						<text class="title">{{productObj.name}}</text>
+					</view>
+					<view class="unit-price">
+						<text class="price">{{productObj.retail_price}}</text>
+					</view>
+					<view class="unit-individual">
+						<view>
+							<image :src="vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/e9cb8b40-bcfd-11ea-b244-a9f5e5565f30.jpg"></image>
+						</view>
+					</view>
+				</view>
+			</uni-popup>
+		</view>
 	</view>
-	</view>
+
 </template>
 
 <script>
 	import uniBadge from "@/components/uni-badge/uni-badge.vue";
+	import popupLayer from "@/components/popup-layer/popup-layer.vue";
 	export default {
 		components: {
-			uniBadge
+			uniBadge,
+			popupLayer
+
 		},
+
+
 		data() {
 			return {
 				string: '<div style="text-align:center;"><img src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"/></div>',
@@ -257,7 +278,12 @@
 					})
 				}
 			},
-
+			toggle() {
+				this.$refs.popup.open()
+			},
+			change(e) {
+				console.log('popup ' + e.type + ' 状态', e.show)
+			},
 		}
 	}
 </script>
@@ -473,6 +499,13 @@
 		}
 	}
 
+	/*底部弹出框*/
+	.popup-content {
+		background-color: #fff;
+		padding: 15px;
+	}
+
+
 	/* 规格选择弹窗 */
 	.attr-content {
 		padding: 10upx 30upx;
@@ -661,7 +694,7 @@
 		position: fixed;
 		left: 15upx;
 		bottom: 15upx;
-		z-index: 109;
+		z-index: 10;
 		display: flex;
 		justify-content: center;
 		align-items: center;

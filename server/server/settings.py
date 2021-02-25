@@ -173,16 +173,16 @@ REST_FRAMEWORK_EXTENSIONS = {
 
 }
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://106.54.170.236:6379",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            #   "password": "BYmr82236130"
-        }
-    }
-}
+# CACHES = {
+#    "default": {
+#        "BACKEND": "django_redis.cache.RedisCache",
+#        "LOCATION": "redis://106.54.170.236:6379",
+#        "OPTIONS": {
+#            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#            #   "password": "BYmr82236130"
+#        }
+#    }
+# }
 
 # 配置session缓存
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
@@ -218,6 +218,7 @@ WEIXIN_APPID = 'wxa20b6f7055206dd4'
 # 小程序SECRET
 WEIXIN_SECRET = 'd891da84557b9f77e03d8b66f53d88ed'
 
+"""
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -235,3 +236,4 @@ LOGGING = {
         },
     }
 }
+"""

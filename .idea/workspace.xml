@@ -1,64 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf70738-1423-4d20-9946-f39245f59e89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/kh_community.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kh_community.iml" afterDir="false" />
+    <list default="true" id="dcf70738-1423-4d20-9946-f39245f59e89" name="Default Changelist" comment="add product info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/common/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/empty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/mix-list-cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/mix-list-cell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/pick-regions/pick-regions.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/pick-regions/pick-regions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/share.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/share.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-badge/uni-badge.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-badge/uni-badge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-icons/uni-icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-icons/uni-icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list-item/uni-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list-item/uni-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list/uni-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-list/uni-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-load-more/uni-load-more.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-load-more/uni-load-more.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-number-box.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-number-box.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-popup/uni-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-transition/uni-transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/uni-transition/uni-transition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/xinyu-logistics/xinyu-logistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/components/xinyu-logistics/xinyu-logistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/manageAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/account/manageAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/addressManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/address/addressManage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/application_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/gender.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/gender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/manageApplication.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/manageApplication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail_customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intentionDetail_customer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention_customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/intention/intention_customer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/getLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/getLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/notice/notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/notice/notice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createIntention.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createIntention.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/config/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/pages/product/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/product/product.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/pages/product/product_general.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/product/product_general.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/empty.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/empty.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/mix-list-cell.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/mix-list-cell.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/pick-regions/pick-regions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/pick-regions/pick-regions.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/share.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/share.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-badge/uni-badge.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-badge/uni-badge.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-icons/uni-icons.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-icons/uni-icons.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-list-item/uni-list-item.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-list-item/uni-list-item.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-list/uni-list.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-list/uni-list.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-load-more/uni-load-more.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-load-more/uni-load-more.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-number-box.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-number-box.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-popup/uni-popup.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-popup/uni-popup.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-transition/uni-transition.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/uni-transition/uni-transition.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/xinyu-logistics/xinyu-logistics.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/components/xinyu-logistics/xinyu-logistics.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/account/account.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/account/account.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/account/manageAccount.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/account/manageAccount.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/address/address.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/address/address.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/address/addressManage.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/address/addressManage.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/application.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/application.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/application_detail.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/application_detail.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/gender.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/gender.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/manageApplication.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/manageApplication.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/picBack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/picBack.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/picFront.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/application/picFront.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/cart/cart.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/cart/cart.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/category/category.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/category/category.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/detail/detail.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/detail/detail.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/documents/documents.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/documents/documents.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/index/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/index/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intention.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intention.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intentionDetail.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intentionDetail.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intentionDetail_customer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intentionDetail_customer.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intention_customer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/intention/intention_customer.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/location/getLocation.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/location/getLocation.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/location/location.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/location/location.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/money.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/money.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/pay.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/pay.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/paySuccess.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/paySuccess.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/payment.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/payment.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/refund.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/money/refund.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/notice/notice.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/notice/notice.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/createIntention.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/createIntention.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/createOrder.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/createOrder.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/order.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/order.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/orderDetail.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/orderDetail.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/orderLogistic.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/order/orderLogistic.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/product/list.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/product/list.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/product/product.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/product/product.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/public/login.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/public/login.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/showImg.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/showImg.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/user.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/user.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/user2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/user2.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap0.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap1.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap1.json" afterDir="false" />
@@ -150,11 +151,7 @@
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap96.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap96.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap97.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap97.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap98.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/sitemap98.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/mark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/mark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/p.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/p.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/pos_b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/pos_b.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/pos_r.svg" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/pos_r.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/yixuan-selectAddress/city.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/yixuan-selectAddress/city.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/celery.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/Json.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/Json.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/attachment_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/attachment_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/intention_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/intention_api.js" afterDir="false" />
@@ -163,15 +160,21 @@
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/product_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/product_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/user_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/user_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/intentions/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/intentions/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/orders/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/orders/mixins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/until/listen.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/until/listen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/products/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/products/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="345059166">
@@ -209,28 +212,36 @@
     <session id="-699351825">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="js" value="1" />
+          <entry key="py" value="35" />
+          <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Python" value="35" />
+          <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="49" />
+          <entry key="py" value="1763" />
+          <entry key="txt" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="49" />
+          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="Python" value="1763" />
         </counts>
       </usages-collector>
     </session>
@@ -238,48 +249,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/until/listen.py">
+        <entry file="file://$PROJECT_DIR$/server/server/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1010">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/orders/mixins.py">
+        <entry file="file://$PROJECT_DIR$/server/products/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-90">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
+                <marker date="1614232803727" expanded="true" signature="2643:2980" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/until/pika.py">
+        <entry file="file://$PROJECT_DIR$/server/products/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="328">
+              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#61#0" expanded="true" />
+                <marker date="1614233154077" expanded="true" signature="543:658" ph="..." />
+                <marker date="1614233154077" expanded="true" signature="2283:2284" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server/settings.py">
+        <entry file="file://$PROJECT_DIR$/server/products/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1936">
-              <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+            <state relative-caret-position="132">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/orders/urls.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -294,6 +334,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>static</find>
+      <find>ProductUnitViewSet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -302,10 +343,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/server/settings.py" />
         <option value="$PROJECT_DIR$/server/until/listen.py" />
-        <option value="$PROJECT_DIR$/server/orders/mixins.py" />
         <option value="$PROJECT_DIR$/server/until/pika.py" />
+        <option value="$PROJECT_DIR$/server/intentions/serializers.py" />
+        <option value="$PROJECT_DIR$/server/orders/mixins.py" />
+        <option value="$PROJECT_DIR$/server/server/settings.py" />
+        <option value="$PROJECT_DIR$/server/products/models.py" />
+        <option value="$PROJECT_DIR$/server/products/serializers.py" />
+        <option value="$PROJECT_DIR$/server/products/urls.py" />
+        <option value="$PROJECT_DIR$/server/products/views.py" />
+        <option value="$PROJECT_DIR$/server/orders/frontend_urls.py" />
       </list>
     </option>
   </component>
@@ -324,10 +371,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="153" />
-    <option name="y" value="8" />
-    <option name="width" value="1693" />
-    <option name="height" value="1033" />
+    <option name="x" value="574" />
+    <option name="y" value="202" />
+    <option name="width" value="1940" />
+    <option name="height" value="1021" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -351,25 +398,34 @@
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="intentions" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="until" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (server) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -383,7 +439,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -404,6 +460,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
@@ -447,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613978752474</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add product info">
+      <created>1614160049448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614160049448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -460,15 +524,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="153" y="8" width="1693" height="1033" extended-state="0" />
-    <editor active="true" />
+    <frame x="499" y="378" width="1940" height="1021" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2559706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22446808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,15 +539,40 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33741647" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005319" side_tool="true" weight="0.34988713" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4994681" visible="true" weight="0.34988713" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3213898" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22446808" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005319" side_tool="true" weight="0.34988713" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4994681" visible="true" weight="0.34988713" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3213898" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -493,47 +581,174 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="add product info" />
+    <option name="LAST_COMMIT_MESSAGE" value="add product info" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/server/settings.py">
+    <entry file="file://$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1936">
-          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/p.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/until/pika.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/until/listen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/celery.py" />
     <entry file="file://$PROJECT_DIR$/server/orders/mixins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="1120">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/until/listen.py">
+    <entry file="file://$PROJECT_DIR$/server/orders/serizalizers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state>
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/until/pika.py">
+    <entry file="file://$PROJECT_DIR$/server/products/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Program Files/conda/anaconda/envs/DJANGO/Lib/site-packages/rest_framework/routers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="183">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <marker date="1614232803727" expanded="true" signature="2643:2980" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1010">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/frontend_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+            <marker date="1614233154077" expanded="true" signature="543:658" ph="..." />
+            <marker date="1614233154077" expanded="true" signature="2283:2284" ph="..." />
           </folding>
         </state>
       </provider>

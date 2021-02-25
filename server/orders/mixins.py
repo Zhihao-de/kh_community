@@ -51,11 +51,7 @@ class OrderCreateModelMixin:
                                               flags=0, created_at=order.created_at, updated_at=order.updated_at,
                                               order=order)
             # 将order数据保存至cache 等待过期消息
-            con = Daemon()
-            con.set_value(order.serial_number, "", 10)
-
-            print(con.get_value(order.serial_number))
-
+            # 创建之后要向MQ中发送 订单消息
     def get_success_headers(self, data):
         try:
             return {'Location': str(data[api_settings.URL_FIELD_NAME])}
