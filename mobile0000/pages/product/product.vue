@@ -78,21 +78,39 @@
 			</view>
 		</view>
 		<view class="hide">
-			<uni-popup id="popup" ref="popup" type="bottom">
-				<view class="popup-content">
-					<view class="unit-title">
-						<text class="title">{{productObj.name}}</text>
-					</view>
-					<view class="unit-price">
-						<text class="price">{{productObj.retail_price}}</text>
-					</view>
-					<view class="unit-individual">
-						<view>
-							<image :src="vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/e9cb8b40-bcfd-11ea-b244-a9f5e5565f30.jpg"></image>
+			<view>
+				<uni-popup id="popup" ref="popup" type="bottom">
+					<view class="popup-content">
+						<view><text class="title">{{productObj.name}}</text></view>
+						<view v-for="item in productUnit" :key="item.code">
+							<view class="unit-title">
+								<text class="title">{{item.code}}</text>
+							</view>
+							<view class="unit-price">
+								<text class="price">{{item.purchase_pricess}}</text>
+							</view>
+							<view class="unit-individual">
+								<view>
+									<image style="width: 100px; height: 100px; background-color: #eeeeee;" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-uni-app-doc/6acec660-4f31-11eb-a16f-5b3e54966275.jpg">
+
+									</image>
+								</view>
+							</view>
+						</view>
+						<view class="action-btn-group">
+							<button v-if="role==2" type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateOrder">
+								立即购买
+							</button>
+							<button v-else type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateIntention">
+								立即下单
+							</button>
+
+							<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>
 						</view>
 					</view>
-				</view>
-			</uni-popup>
+
+				</uni-popup>
+			</view>
 		</view>
 	</view>
 
@@ -127,6 +145,8 @@
 					description: "这是产品描述",
 					stock: 0
 				},
+				productUnit: [],
+
 				number: 1,
 				role: 0,
 			};
@@ -137,6 +157,8 @@
 			//接收传值,id里面放的是标题，因为测试数据并没写id 
 			let id = options.id;
 			if (id) {
+
+				//产品展示页面
 				this.productObj.id = id;
 				let res = await this.getGoodsDetail(id);
 				this.productObj.name = res.name;
@@ -158,6 +180,11 @@
 				this.productObj.unit = res.unit;
 				this.productObj.description = res.description;
 				this.productObj.created_at = res.created_at;
+				//产品单品信息
+
+				let units = await this.getGoodUnit(id);
+				this.productUnit = units;
+
 			}
 			this.cart = uni.getStorageSync("cart");
 			this.role = uni.getStorageSync("userDetail").flags;
@@ -183,6 +210,26 @@
 				}).catch((e) => {});
 
 			},
+
+			getGoodUnit(id) {
+				let that = this;
+				return new Promise(resolve => {
+					uni.request({
+						header: {
+							"content-type": "application/x-www-form-urlencoded"
+						},
+						url: that.api.ApiRoot + "products/" + id + "/units/",
+						method: "GET",
+						success(res) {
+							resolve(res.data)
+						},
+						fail(res) {
+							console.log(res)
+						}
+					})
+				}).catch((e) => {});
+			},
+
 			//数量减一
 			cutNumber: function() {
 				if (this.number - 1 > 1) {
