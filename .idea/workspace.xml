@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf70738-1423-4d20-9946-f39245f59e89" name="Default Changelist" comment="add product info">
+      <change afterPath="$PROJECT_DIR$/server/until/messageConsumer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/pages/product/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/product/product.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/pages/address/addressManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/address/addressManage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" afterDir="false" />
@@ -107,7 +108,9 @@
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/public/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/showImg.js" afterDir="false" />
@@ -213,12 +216,21 @@
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/product_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/product_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/user_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/user_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/orders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/until/pika.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/kh_community$messageSender.coverage" NAME="messageSender Coverage Results" MODIFIED="1614588213859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/until" />
+    <SUITE FILE_PATH="coverage/kh_community$MessageProducer.coverage" NAME="MessageProducer Coverage Results" MODIFIED="1614589352424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/until" />
+    <SUITE FILE_PATH="coverage/kh_community$messageConsumer.coverage" NAME="messageConsumer Coverage Results" MODIFIED="1614589165867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/until" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -268,27 +280,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="1" />
-          <entry key="py" value="35" />
+          <entry key="py" value="45" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="35" />
+          <entry key="Python" value="45" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1763" />
-          <entry key="txt" value="63" />
+          <entry key="dummy" value="11" />
+          <entry key="py" value="2099" />
+          <entry key="txt" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="63" />
-          <entry key="Python" value="1763" />
+          <entry key="PLAIN_TEXT" value="88" />
+          <entry key="Python" value="2099" />
         </counts>
       </usages-collector>
     </session>
@@ -298,71 +311,83 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="878">
+              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/products/models.py">
+        <entry file="file://$PROJECT_DIR$/server/server/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+            <state relative-caret-position="550">
+              <caret line="43" column="45" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="45" />
               <folding>
-                <marker date="1614232803727" expanded="true" signature="2643:2980" ph="..." />
+                <element signature="e#630#662#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/orders/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="146" column="12" lean-forward="true" selection-start-line="146" selection-start-column="12" selection-end-line="154" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server/asgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/users/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/until/MessageProducer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/products/views.py">
+        <entry file="file://$PROJECT_DIR$/server/until/messageConsumer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="394">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
-                <marker date="1614243081958" expanded="true" signature="544:659" ph="..." />
-                <marker date="1614243081958" expanded="true" signature="2284:2285" ph="..." />
+                <element signature="e#48#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/products/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/orders/urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -387,15 +412,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server/until/listen.py" />
-        <option value="$PROJECT_DIR$/server/until/pika.py" />
         <option value="$PROJECT_DIR$/server/intentions/serializers.py" />
         <option value="$PROJECT_DIR$/server/orders/mixins.py" />
-        <option value="$PROJECT_DIR$/server/server/settings.py" />
         <option value="$PROJECT_DIR$/server/products/models.py" />
         <option value="$PROJECT_DIR$/server/products/serializers.py" />
         <option value="$PROJECT_DIR$/server/products/urls.py" />
         <option value="$PROJECT_DIR$/server/orders/frontend_urls.py" />
         <option value="$PROJECT_DIR$/server/products/views.py" />
+        <option value="$PROJECT_DIR$/server/server/settings.py" />
+        <option value="$PROJECT_DIR$/server/orders/models.py" />
+        <option value="$PROJECT_DIR$/server/until/pika.py" />
+        <option value="$PROJECT_DIR$/server/until/messageSender.py" />
+        <option value="$PROJECT_DIR$/server/until/MessageProducer.py" />
+        <option value="$PROJECT_DIR$/server/until/messageConsumer.py" />
       </list>
     </option>
   </component>
@@ -414,10 +443,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="270" />
-    <option name="y" value="33" />
+    <option name="x" value="449" />
+    <option name="y" value="85" />
     <option name="width" value="1940" />
-    <option name="height" value="1021" />
+    <option name="height" value="993" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -431,31 +460,6 @@
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kh_community" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile0000" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kh_community" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile0000" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kh_community" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile0000" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="detail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kh_community" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile0000" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
@@ -521,7 +525,73 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.MessageProducer">
+    <configuration name="MessageProducer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kh_community" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/until" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/until/MessageProducer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="messageConsumer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kh_community" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/until" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/until/messageConsumer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="messageSender" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kh_community" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/until" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\kh_community\server\until\MessageProducer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="kh" type="Python.DjangoServer" factoryName="Django server">
       <module name="kh_community" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -546,6 +616,19 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.kh" />
+      <item itemvalue="Python.messageSender" />
+      <item itemvalue="Python.MessageProducer" />
+      <item itemvalue="Python.messageConsumer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.MessageProducer" />
+        <item itemvalue="Python.messageConsumer" />
+        <item itemvalue="Python.messageSender" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -592,14 +675,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="270" y="33" width="1940" height="1021" extended-state="0" />
+    <frame x="449" y="85" width="1940" height="993" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22446808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -607,8 +691,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295711" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005319" side_tool="true" weight="0.34988713" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4994681" visible="true" weight="0.34988713" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010638" side_tool="true" weight="0.36130536" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893618" weight="0.36130536" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3213898" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -650,9 +734,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix" />
-    <MESSAGE value="add product info" />
     <MESSAGE value="2nd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
+    <MESSAGE value="add product info" />
+    <MESSAGE value="add new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new features" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -668,13 +753,6 @@
     <entry file="file://$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/p.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/until/pika.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/intentions/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -686,6 +764,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-244">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -733,25 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="45" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/products/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
@@ -759,42 +821,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
-          <folding>
-            <marker date="1614232803727" expanded="true" signature="2643:2980" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/orders/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/orders/frontend_urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -808,12 +836,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/products/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="935">
+          <caret line="82" column="81" selection-start-line="82" selection-start-column="81" selection-end-line="82" selection-end-column="81" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
             <marker date="1614243081958" expanded="true" signature="544:659" ph="..." />
             <marker date="1614243081958" expanded="true" signature="2284:2285" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <marker date="1614232803727" expanded="true" signature="2643:2980" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/asgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tasks.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="146" column="12" lean-forward="true" selection-start-line="146" selection-start-column="12" selection-end-line="154" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/until/pika.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/until/MessageProducer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/until/messageConsumer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -222,6 +222,11 @@ page {
   content: '';
   border-bottom: 1px solid #ccc;
 }
+/*底部弹出框*/
+.popup-content {
+  background-color: #fff;
+  padding: 15px;
+}
 /* 规格选择弹窗 */
 .attr-content {
   padding: 10rpx 30rpx;
@@ -444,7 +449,7 @@ page {
   position: fixed;
   left: 15rpx;
   bottom: 15rpx;
-  z-index: 109;
+  z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

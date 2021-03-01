@@ -100,14 +100,24 @@ AUTH_PROFILE_MODULE = 'djangoadmin.myadmin.UserProfile'
 
 DATABASES = {
 
+    #        'default': {
+    #            'ENGINE': 'django.db.backends.mysql',
+    #            'NAME': 'khdb',
+    #            'HOST': '106.54.170.236',
+    #            'PORT': '3306',
+    #            'USER': 'khdb',
+    #            'PASSWORD': 'BYmr82236130@'
+    #        }
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'khdb',
-        'HOST': '106.54.170.236',
+        'HOST': '81.71.33.22',
         'PORT': '3306',
         'USER': 'khdb',
         'PASSWORD': 'BYmr82236130@'
     }
+
 }
 
 # Password validation
@@ -193,6 +203,13 @@ import datetime
 JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'kh',  # "Authorization: JWT <token>"
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=90),  # JWT_EXPIRATION_DELTA 指明token的有效期
+}
+
+# 配置MQ
+RABBITMQCONFIG = {
+    'username': 'admin',
+    'password': 'admin'
+
 }
 
 # Wagtail settings

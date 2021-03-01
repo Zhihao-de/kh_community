@@ -88,7 +88,8 @@
 
 			}, {
 				"name": this.addressData.city,
-				"code": this.addressData.region[0] + this.addressData.region[1] + this.addressData.region[2] + this.addressData.region[3]
+				"code": this.addressData.region[0] + this.addressData.region[1] + this.addressData.region[2] + this.addressData.region[
+					3]
 			}, {
 				"name": this.addressData.district,
 				"code": this.addressData.region

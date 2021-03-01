@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-from products.models import ProductModel
+from products.models import ProductModel, ProductUnitModel
 from users.models import UserModel
 
 
@@ -97,6 +97,7 @@ class OrderDetailModel(models.Model):
     """
     order = models.ForeignKey(OrderModel, on_delete=models.CASCADE, verbose_name='关联订单')
     product = models.ForeignKey(ProductModel, on_delete=models.DO_NOTHING, verbose_name='关联产品')
+    productUnit = models.ForeignKey(ProductUnitModel, on_delete=models.DO_NOTHING, verbose_name='关联产品SKU')
     purchase_price = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='交易单价元')
     quantity = models.IntegerField(default=0, verbose_name='商品数量')
 
@@ -147,6 +148,7 @@ class OrderDetailsHistoryModel(models.Model):
     """
     order = models.ForeignKey(OrdersHistoryModel, on_delete=models.CASCADE)
     product = models.ForeignKey(ProductModel, on_delete=models.DO_NOTHING)
+    productUnit = models.ForeignKey(ProductUnitModel, on_delete=models.DO_NOTHING, verbose_name='关联产品SKU')
     quantity = models.IntegerField(default=0)
     weight = models.DecimalField(max_digits=14, decimal_places=3, default=0.000)
 
