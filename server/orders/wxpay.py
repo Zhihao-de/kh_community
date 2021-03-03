@@ -288,6 +288,9 @@ def wxpayback(request):
 
             # 查数量改库存
             details = OrderDetailModel.objects.filter(order_id=order.id)
+
+            # 这里需要发一条消息
+
             for product_info in details:
                 pro = ProductModel.objects.get(id=product_info.product.id)
                 pro.stock = product_info.product.stock - product_info.quantity

@@ -1,11 +1,27 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-import random
-
 import pika
 
-# 新建连接，rabbitmq安装在本地则hostname为'localhost'
+
+class MessageCosumer:
+    def __init__(self, host, username, password):
+        self.hostname = host
+        self.port = 5672
+        self.username = username
+        self.password = password
+
+    def connect(self):
+        credentials = pika.PlainCredentials(self.username, self.password)
+        parameters = pika.ConnectionParameters(host=self.hostname, port=5672, virtual_host='/', credentials=credentials)
+        connection = pika.BlockingConnection(parameters)
+        return connection
+
+    def consume(self, message):
+        channel = self.connection.channel()
+        channel.queue_declare(queue='sat')
+        channel.basic_publish(exchange='', routing_key='sat', body=message)
+        print(" [x] Sent %s" % message)
+
+    def close(self):
+        self.connection.close()
 
 
 hostname = '81.71.33.22'
@@ -15,13 +31,16 @@ connection = pika.BlockingConnection(parameters)
 
 # 创建通道
 channel = connection.channel()
-# 声明一个队列，生产者和消费者都要声明一个相同的队列，用来防止万一某一方挂了，另一方能正常运行
 channel.queue_declare(queue='sat')
 
-number = random.randint(1, 1000)
-body = 'hello world:%s' % number
-# 交换机; 队列名,写明将消息发往哪个队列; 消息内容
-# routing_key在使用匿名交换机的时候才需要指定，表示发送到哪个队列
-channel.basic_publish(exchange='', routing_key='sat', body=body)
-print(" [x] Sent %s" % body)
-connection.close()
+
+def callback(ch, method, properties, body):
+    print(" [x] Received %r" % (body,))
+
+
+# 告诉rabbitmq使用callback来接收信息
+channel.basic_consume('sat', callback)
+
+# 开始接收信息，并进入阻塞状态，队列里有信息才会调用callback进行处理,按ctrl+c退出
+print(' [*] Waiting for messages. To exit press CTRL+C')
+channel.start_consuming()

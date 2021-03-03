@@ -5,6 +5,7 @@ from rest_framework.settings import api_settings
 
 from orders.models import OrderModel, OrderDetailModel, OrdersHistoryModel
 from products.models import ProductModel
+from until.RabbitMqClient import RabbitMQClient
 
 
 class OrderCreateModelMixin:
@@ -50,8 +51,24 @@ class OrderCreateModelMixin:
             OrdersHistoryModel.objects.create(user=order.user, list_amount=order.amount, tare=order.tare, is_paid=False,
                                               flags=0, created_at=order.created_at, updated_at=order.updated_at,
                                               order=order)
-            # 将order数据保存至cache 等待过期消息
-            # 创建之后要向MQ中发送 订单消息
+
+            # 创建之后要向订单MQ中发送 订单消息 设置TTL（自己是生产者）
+            print('发送消息开始')
+            client = RabbitMQClient()
+            msg = '消息发送至延时队列:' + order.serial_number
+
+            # 设置消息的TTL为10
+
+            client.publish_message('delay', msg, '', delay=1, TTL=3000)
+
+            print('消息投递完成')
+
+            # 增加一个线程 开一个监听器(自己)
+
+            print('开启监听模式')
+
+            # 如果没有支付的话  超时就用更改
+
     def get_success_headers(self, data):
         try:
             return {'Location': str(data[api_settings.URL_FIELD_NAME])}

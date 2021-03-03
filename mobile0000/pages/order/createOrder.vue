@@ -54,7 +54,7 @@
 			</view>
 
 		</view>
-
+    
 		<!-- 金额明细 -->
 		<view class="yt-list">
 			<view class="yt-list-cell b-b">
