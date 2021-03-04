@@ -97,16 +97,14 @@
 						</view>
 
 
-
-
 						<view><text>品名：</text></view>
 						<view><text class="title">{{productObj.name}}</text></view>
 						<view><text>规格：</text></view>
-						<view v-for="item in productUnit" :key="item.id">
-							<view class="unit-title">
-								<text class="title">{{item.attributes}} {{item.purchase_price}}</text>
+						<view class="attributes_area" v-for="item in productUnit" :key="item.id">
+							<view class="attributes">
+								<button class="attribute_button">{{item.attributes}}--{{item.purchase_price}}</button>
 							</view>
-							
+
 
 						</view>
 						<view class="c-list">
@@ -1031,6 +1029,42 @@
 			font-size: 34upx;
 			height: 50upx;
 			color: $font-color-light;
+		}
+	}
+
+	.attributes_area {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		overflow: hidden;
+		position: relative;
+		padding-left: 30upx;
+
+
+		.attribute {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			overflow: hidden;
+			position: relative;
+			padding-top: 20upx;
+			padding-bottom: 20upx;
+
+
+		}
+
+		.attribute_button {
+			/*display: flex;
+			align-items: center;*/
+			justify-content: center;
+			width: 200upx;
+			height: 80upx;
+			font-size: $font-base;
+			padding-top: 20upx;
+			/*border-radius: 0;*/
+			background: transparent;
+		
+
 		}
 	}
 </style>
