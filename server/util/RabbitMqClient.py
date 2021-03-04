@@ -1,8 +1,9 @@
 import logging
+
 import pika
 
 
-class RabbitMQClient:
+class RabbitMqClient:
     def __init__(self, conn_str='amqp://admin:admin@81.71.33.22:5672/%2F'):
         self.exchange_type = "direct"
         self.connection_string = conn_str

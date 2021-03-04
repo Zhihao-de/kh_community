@@ -56,7 +56,7 @@
 			</view>
 			<rich-text :nodes="productObj.pic_urls"></rich-text>
 		</view>
-		<uni-popup class="popup_box" ref="popups" ,type="bottom">
+		<uni-popup class="popup_box" ref="popups" type="bottom">
 		</uni-popup>
 		<!-- 底部操作菜单 -->
 		<view class="page-bottom">

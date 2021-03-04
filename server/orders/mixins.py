@@ -3,9 +3,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.settings import api_settings
 
+from middleware.RabbitMqClient import RabbitMqClient as rabbit
 from orders.models import OrderModel, OrderDetailModel, OrdersHistoryModel
 from products.models import ProductModel
-from until.RabbitMqClient import RabbitMQClient
 
 
 class OrderCreateModelMixin:
@@ -54,20 +54,14 @@ class OrderCreateModelMixin:
 
             # 创建之后要向订单MQ中发送 订单消息 设置TTL（自己是生产者）
             print('发送消息开始')
-            client = RabbitMQClient()
+            client = rabbit()
             msg = '消息发送至延时队列:' + order.serial_number
 
-            # 设置消息的TTL为10
+            # 设置消息的TTL为1分钟
 
-            client.publish_message('delay', msg, '', delay=1, TTL=3000)
+            client.publish_message('delay', msg, '', delay=1, TTL=60000)
 
             print('消息投递完成')
-
-            # 增加一个线程 开一个监听器(自己)
-
-            print('开启监听模式')
-
-            # 如果没有支付的话  超时就用更改
 
     def get_success_headers(self, data):
         try:

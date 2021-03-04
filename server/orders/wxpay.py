@@ -13,6 +13,7 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
+from middleware.RabbitMqClient import RabbitMqClient as rabbit
 from orders.models import OrderModel, OrderDetailModel, OrdersHistoryModel
 from orders.models import OrderTransactionModel
 from products.models import ProductModel
@@ -167,11 +168,18 @@ def time_shift(time):
     return datetime.datetime.strptime(formed_time, time_format)
 
 
+def pay_ready():
+    print('消息开始消费')
+
+
 @csrf_exempt
 def payOrder(request):
     """
     send request to wechat pay and operate orders
     """
+
+    client = rabbit()
+    client.start_consume(pay_ready(), 'delay', 0)
     json_data = json.loads(request.body)
     user_code = json_data['code']
     serial = json_data['serial']

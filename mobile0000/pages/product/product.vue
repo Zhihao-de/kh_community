@@ -23,7 +23,7 @@
 				<text class="price">{{productObj.retail_price}}</text>
 			</view>
 		</view>
-		<view class="c-list">
+		<!--<view class="c-list">
 			<view class="c-row b-b">
 				<text class="tit">购买数量</text>
 				<view class="con">
@@ -40,7 +40,7 @@
 
 			</view>
 
-		</view>
+		</view>-->
 
 		<view class="detail-desc">
 			<view class="d-header">
@@ -77,35 +77,68 @@
 				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>
 			</view>
 		</view>
-		<view class="hide">
+		<view class="hide" style="background-color: #EEEEEE;">
 			<view>
 				<uni-popup id="popup" ref="popup" type="bottom">
 					<view class="popup-content">
-						<view><text class="title">{{productObj.name}}</text></view>
-						<view v-for="item in productUnit" :key="item.code">
-							<view class="unit-title">
-								<text class="title">{{item.code}}</text>
-							</view>
-							<view class="unit-price">
-								<text class="price">{{item.purchase_pricess}}</text>
-							</view>
-							<view class="unit-individual">
-								<view>
-									<image style="width: 100px; height: 100px; background-color: #eeeeee;" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-uni-app-doc/6acec660-4f31-11eb-a16f-5b3e54966275.jpg">
 
-									</image>
+						<view class="top_area">
+							<view class="t-item">
+								<view class="image-wrapper" style="width: 100px; height: 100px; background-color: #eeeeee;">
+								</view>
+								<view class="item-right">
+									<text class="title">￥{{productObj.purchase_price}}</text>
+									<text class="title"></text>
+									<text class="title"></text>
+									<text v-if="role==2" class="price">{{titem.purchase_price}}</text>
+									<text v-else class="price">{{titem.retail_price}}</text>
 								</view>
 							</view>
 						</view>
+
+
+
+
+						<view><text>品名：</text></view>
+						<view><text class="title">{{productObj.name}}</text></view>
+						<view><text>规格：</text></view>
+						<view v-for="item in productUnit" :key="item.id">
+							<view class="unit-title">
+								<text class="title">{{item.attributes}} {{item.purchase_price}}</text>
+							</view>
+							
+
+						</view>
+						<view class="c-list">
+							<view class="c-row b-b">
+								<text class="tit">购买数量</text>
+								<view class="con">
+									<view class="item-list">
+										<view class="number-item">
+											<view class="selnum">
+												<view class="cut" @click="cutNumber">-</view>
+												<input v-model="number" class="number" disabled="true" type="number" />
+												<view class="add" @click="addNumber">+</view>
+											</view>
+										</view>
+									</view>
+								</view>
+
+							</view>
+
+						</view>
 						<view class="action-btn-group">
-							<button v-if="role==2" type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateOrder">
+							<button type="primary" class=" action-btn no-border buy-now-btn" @click="confirmProductUnit">
+								确定
+							</button>
+							<!--<button v-if="role==2" type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateOrder">
 								立即购买
 							</button>
 							<button v-else type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateIntention">
 								立即下单
 							</button>
 
-							<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>
+							<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>-->
 						</view>
 					</view>
 
@@ -282,6 +315,11 @@
 					})
 
 				}
+			},
+			//在这里将单品加入订单信息
+			confirmProductUnit() {
+
+
 			},
 
 			//加入购物车
@@ -550,6 +588,82 @@
 	.popup-content {
 		background-color: #fff;
 		padding: 15px;
+
+		.title {
+			font-size: $font-base - 4upx;
+			color: $font-color-dark;
+			height: 40upx;
+			line-height: 40upx;
+		}
+
+
+		.a-t {
+			display: flex;
+
+			image {
+				width: 170upx;
+				height: 170upx;
+				flex-shrink: 0;
+				margin-top: -40upx;
+				border-radius: 8upx;
+				;
+			}
+
+			.right {
+				display: flex;
+				flex-direction: column;
+				padding-left: 24upx;
+				font-size: $font-sm + 2upx;
+				color: $font-color-base;
+				line-height: 42upx;
+
+				.price {
+					font-size: $font-lg;
+					color: $uni-color-primary;
+					margin-bottom: 10upx;
+				}
+
+				.selected-text {
+					margin-right: 10upx;
+				}
+			}
+		}
+
+		.attr-list {
+			display: flex;
+			flex-direction: column;
+			font-size: $font-base + 2upx;
+			color: $font-color-base;
+			padding-top: 30upx;
+			padding-left: 10upx;
+		}
+
+		.item-list {
+			padding: 20upx 0 0;
+			display: flex;
+			flex-wrap: wrap;
+
+			text {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #eee;
+				margin-right: 20upx;
+				margin-bottom: 20upx;
+				border-radius: 100upx;
+				min-width: 60upx;
+				height: 60upx;
+				padding: 0 20upx;
+				font-size: $font-base;
+				color: $font-color-dark;
+			}
+
+			.selected {
+				background: #fbebee;
+				color: $uni-color-primary;
+			}
+		}
+
 	}
 
 
@@ -626,7 +740,7 @@
 	}
 
 	/*  弹出层 */
-	.popup {
+	/*	.popup {
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -735,7 +849,7 @@
 			}
 		}
 	}
-
+*/
 	/* 底部操作菜单 */
 	.page-bottom {
 		position: fixed;
@@ -853,5 +967,70 @@
 		flex-direction: column;
 		position: fixed;
 
+	}
+
+	.t-item {
+		display: flex;
+		position: relative;
+		padding: 30upx 40upx;
+
+		.image-wrapper {
+			width: 180upx;
+			height: 180upx;
+			flex-shrink: 0;
+			position: relative;
+			background-size: 100% 100%;
+
+
+		}
+
+		.item-right {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			overflow: hidden;
+			position: relative;
+			padding-left: 30upx;
+
+			.title {
+				font-size: $font-base - 4upx;
+				color: $font-color-dark;
+				height: 40upx;
+				line-height: 40upx;
+
+			}
+
+			.price {
+				font-size: $font-base - 2upx;
+				color: $font-color-dark;
+				height: 40upx;
+				line-height: 40upx;
+
+				&:before {
+					content: '￥';
+					font-size: $font-base - 2upx;
+					//margin: 0 2upx 0 8upx;
+				}
+			}
+
+			.attr {
+				font-size: $font-sm + 2upx;
+				color: $font-color-light;
+				height: 50upx;
+				line-height: 50upx;
+			}
+
+			.price {
+				height: 50upx;
+				line-height: 50upx;
+			}
+		}
+
+		.del-btn {
+			padding: 4upx 10upx;
+			font-size: 34upx;
+			height: 50upx;
+			color: $font-color-light;
+		}
 	}
 </style>
