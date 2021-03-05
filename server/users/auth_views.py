@@ -1,14 +1,13 @@
 import json
-from django.http import JsonResponse
-from django.core import serializers
-from django.views.decorators.csrf import csrf_exempt
-from django.forms.models import model_to_dict
-
-from users.models import UserModel
-from users import response_code
 
 import requests
 from django.conf import settings
+from django.forms.models import model_to_dict
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+from users import response_code
+from users.models import UserModel
 
 '''
 获取openid
@@ -69,6 +68,8 @@ def wechat_login(request):
                     "userDetail": user_details,
                     "role": 2
                 }
+            # flags==1时候表示是加盟用户
+         
             else:
                 res = {
                     'errno': response_code.IS_SUCCESS,
@@ -93,7 +94,7 @@ def wechat_login(request):
             newUser.wx_union_id = weixin_openid
             newUser.gender = sex
             newUser.address_id = 0
-            newUser.wx_avatar_url =avatar
+            newUser.wx_avatar_url = avatar
             newUser.wx_name = nickname
             newUser.save()
             res = {

@@ -23,7 +23,50 @@
 				<text class="price">{{productObj.retail_price}}</text>
 			</view>
 		</view>
-		<!--<view class="c-list">
+
+
+		<!--  分享 -->
+		<view class="share-section" @click="share">
+			<view class="share-icon">
+				<text class="yticon icon-xingxing"></text>
+				积
+			</view>
+			<text class="tit">购买该商品可获得积分</text>
+			<text class="yticon icon-bangzhu1"></text>
+			<view class="share-btn">
+				积分查询
+				<text class="yticon icon-you"></text>
+			</view>
+
+		</view>
+
+        
+		<view class="c-list">
+			<!--
+			<view class="c-row b-b" @click="toggleSpec">
+				<text class="tit">购买类型</text>
+				<view class="con">
+					<text class="selected-text" v-for="(sItem, sIndex) in specSelected" :key="sIndex">
+						{{sItem.name}}
+					</text>
+				</view>
+				<text class="yticon icon-you"></text>
+			</view>-->
+			<!--<view class="c-row b-b">
+				<text class="tit">优惠券</text>
+				<text class="con t-r red">领取优惠券</text>
+				<text class="yticon icon-you"></text>
+			</view>
+			<view class="c-row b-b">
+				<text class="tit">促销活动</text>
+				<view class="con-list">
+					<text>新人首单送20元无门槛代金券</text>
+					<text>订单满50减10</text>
+					<text>订单满100减30</text>
+					<text>单笔购买满两件免邮费</text>
+				</view>
+			</view>-->
+
 			<view class="c-row b-b">
 				<text class="tit">购买数量</text>
 				<view class="con">
@@ -39,8 +82,15 @@
 				</view>
 
 			</view>
+			<view class="c-row b-b">
+				<text class="tit">服务</text>
+				<view class="bz-list con">
+					<text>7天无理由退换货 ·</text>
+					<text>假一赔十 ·</text>
+				</view>
+			</view>
+		</view>
 
-		</view>-->
 
 		<view class="detail-desc">
 			<view class="d-header">
@@ -73,76 +123,13 @@
 				<button v-else type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateIntention">
 					立即下单
 				</button>
-				<button type="primary" class=" action-btn no-border buy-now-btn" @click="toggle">立即购买</button>
+				<!--
+				<button type="primary" class=" action-btn no-border buy-now-btn" @click="toggle">立即购买</button>-->
 				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>
 			</view>
 		</view>
-		<view class="hide" style="background-color: #EEEEEE;">
-			<view>
-				<uni-popup id="popup" ref="popup" type="bottom">
-					<view class="popup-content">
-
-						<view class="top_area">
-							<view class="t-item">
-								<view class="image-wrapper" style="width: 100px; height: 100px; background-color: #eeeeee;">
-								</view>
-								<view class="item-right">
-									<text class="title">￥{{productObj.purchase_price}}</text>
-									<text class="title"></text>
-									<text class="title"></text>
-									<text v-if="role==2" class="price">{{titem.purchase_price}}</text>
-									<text v-else class="price">{{titem.retail_price}}</text>
-								</view>
-							</view>
-						</view>
 
 
-						<view><text>品名：</text></view>
-						<view><text class="title">{{productObj.name}}</text></view>
-						<view><text>规格：</text></view>
-						<view class="attributes_area" v-for="item in productUnit" :key="item.id">
-							<view class="attributes">
-								<button class="attribute_button">{{item.attributes}}--{{item.purchase_price}}</button>
-							</view>
-
-
-						</view>
-						<view class="c-list">
-							<view class="c-row b-b">
-								<text class="tit">购买数量</text>
-								<view class="con">
-									<view class="item-list">
-										<view class="number-item">
-											<view class="selnum">
-												<view class="cut" @click="cutNumber">-</view>
-												<input v-model="number" class="number" disabled="true" type="number" />
-												<view class="add" @click="addNumber">+</view>
-											</view>
-										</view>
-									</view>
-								</view>
-
-							</view>
-
-						</view>
-						<view class="action-btn-group">
-							<button type="primary" class=" action-btn no-border buy-now-btn" @click="confirmProductUnit">
-								确定
-							</button>
-							<!--<button v-if="role==2" type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateOrder">
-								立即购买
-							</button>
-							<button v-else type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateIntention">
-								立即下单
-							</button>
-
-							<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">加入购物车</button>-->
-						</view>
-					</view>
-
-				</uni-popup>
-			</view>
-		</view>
 	</view>
 
 </template>
@@ -160,7 +147,7 @@
 
 		data() {
 			return {
-				string: '<div style="text-align:center;"><img src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"/></div>',
+
 				cart: [],
 				productObj: {
 					id: '',
@@ -176,10 +163,13 @@
 					description: "这是产品描述",
 					stock: 0
 				},
-				productUnit: [],
 
 				number: 1,
 				role: 0,
+
+
+
+
 			};
 		},
 
@@ -208,13 +198,10 @@
 				this.productObj.carousal_urls = pic_array;
 				this.productObj.pic_url = res.pic_url;
 				this.productObj.stock = res.stock;
-				this.productObj.unit = res.unit;
 				this.productObj.description = res.description;
 				this.productObj.created_at = res.created_at;
 				//产品单品信息
 
-				let units = await this.getGoodUnit(id);
-				this.productUnit = units;
 
 			}
 			this.cart = uni.getStorageSync("cart");
@@ -222,6 +209,11 @@
 
 		},
 		methods: {
+
+
+
+
+
 			getGoodsDetail(id) {
 				let that = this;
 				return new Promise(resolve => {
@@ -241,7 +233,7 @@
 				}).catch((e) => {});
 
 			},
-
+			/*
 			getGoodUnit(id) {
 				let that = this;
 				return new Promise(resolve => {
@@ -259,7 +251,7 @@
 						}
 					})
 				}).catch((e) => {});
-			},
+			},*/
 
 			//数量减一
 			cutNumber: function() {
@@ -367,6 +359,7 @@
 			change(e) {
 				console.log('popup ' + e.type + ' 状态', e.show)
 			},
+			stopPrevent() {}
 		}
 	}
 </script>
@@ -636,7 +629,7 @@
 			padding-left: 10upx;
 		}
 
-		.item-list {
+		.item-list {   
 			padding: 20upx 0 0;
 			display: flex;
 			flex-wrap: wrap;
@@ -737,8 +730,8 @@
 		}
 	}
 
-	/*  弹出层 */
-	/*	.popup {
+
+	.popup {
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -847,9 +840,9 @@
 			}
 		}
 	}
-*/
+
 	/* 底部操作菜单 */
-	.page-bottom {
+	/*.page-bottom {
 		position: fixed;
 		left: 15upx;
 		bottom: 15upx;
@@ -912,7 +905,7 @@
 		.action-btn-group {
 			display: flex;
 			height: 76upx;
-			/*border-radius: 100px;*/
+			
 			overflow: hidden;
 			box-shadow: 0 20upx 40upx -16upx #fa436a;
 			box-shadow: 1px 2px 5px rgba(219, 63, 96, 0.4);
@@ -939,11 +932,95 @@
 				height: 100%;
 				font-size: $font-base;
 				padding: 0;
-				/*border-radius: 0;*/
+				
+				background: transparent;
+			}
+		}
+	}*/
+
+	/* 底部操作菜单 */
+	.page-bottom {
+		position: fixed;
+		left: 30upx;
+		bottom: 30upx;
+		z-index: 95;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 690upx;
+		height: 100upx;
+		background: rgba(255, 255, 255, .9);
+		box-shadow: 0 0 20upx 0 rgba(0, 0, 0, .5);
+		border-radius: 16upx;
+
+		.p-b-btn {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: $font-sm;
+			color: $font-color-base;
+			width: 96upx;
+			height: 80upx;
+
+			.yticon {
+				font-size: 40upx;
+				line-height: 48upx;
+				color: $font-color-light;
+			}
+
+			&.active,
+			&.active .yticon {
+				color: $uni-color-primary;
+			}
+
+			.icon-fenxiang2 {
+				font-size: 42upx;
+				transform: translateY(-2upx);
+			}
+
+			.icon-shoucang {
+				font-size: 46upx;
+			}
+		}
+
+		.action-btn-group {
+			display: flex;
+			height: 76upx;
+			border-radius: 100px;
+			overflow: hidden;
+			box-shadow: 0 20upx 40upx -16upx #fa436a;
+			box-shadow: 1px 2px 5px rgba(219, 63, 96, 0.4);
+			background: linear-gradient(to right, #ffac30, #fa436a, #F56C6C);
+			margin-left: 20upx;
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 50%;
+				transform: translateY(-50%);
+				height: 28upx;
+				width: 0;
+				border-right: 1px solid rgba(255, 255, 255, .5);
+			}
+
+			.action-btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 180upx;
+				height: 100%;
+				font-size: $font-base;
+				padding: 0;
+				border-radius: 0;
 				background: transparent;
 			}
 		}
 	}
+
+
 
 	.goods-carts {
 		left: 15upx;
@@ -1063,8 +1140,78 @@
 			padding-top: 20upx;
 			/*border-radius: 0;*/
 			background: transparent;
-		
 
+
+		}
+	}
+
+
+
+	/* 分享 */
+	.share-section {
+		display: flex;
+		align-items: center;
+		color: $font-color-base;
+		background: linear-gradient(left, #fdf5f6, #fbebf6);
+		padding: 12upx 30upx;
+
+		.share-icon {
+			display: flex;
+			align-items: center;
+			width: 70upx;
+			height: 30upx;
+			line-height: 1;
+			border: 1px solid $uni-color-primary;
+			border-radius: 4upx;
+			position: relative;
+			overflow: hidden;
+			font-size: 22upx;
+			color: $uni-color-primary;
+
+			&:after {
+				content: '';
+				width: 50upx;
+				height: 50upx;
+				border-radius: 50%;
+				left: -20upx;
+				top: -12upx;
+				position: absolute;
+				background: $uni-color-primary;
+			}
+		}
+
+		.icon-xingxing {
+			position: relative;
+			z-index: 1;
+			font-size: 24upx;
+			margin-left: 2upx;
+			margin-right: 10upx;
+			color: #fff;
+			line-height: 1;
+		}
+
+		.tit {
+			font-size: $font-base;
+			margin-left: 10upx;
+		}
+
+		.icon-bangzhu1 {
+			padding: 10upx;
+			font-size: 30upx;
+			line-height: 1;
+		}
+
+		.share-btn {
+			flex: 1;
+			text-align: right;
+			font-size: $font-sm;
+			color: $uni-color-primary;
+		}
+
+		.icon-you {
+			font-size: $font-sm;
+			margin-left: 4upx;
+			color: $uni-color-primary;
 		}
 	}
 </style>

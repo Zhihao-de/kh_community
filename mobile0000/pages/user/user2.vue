@@ -42,6 +42,35 @@
 		 @touchstart="coverTouchstart" @touchmove="coverTouchmove" @touchend="coverTouchend">
 			<image class="arc" src="/static/arc.png"></image>
 
+
+
+			<view v-if="userDetail.flags == 1" class="tj-sction">
+				<view class="tj-item">
+					<text class="num">128.8</text>
+					<text>余额</text>
+				</view>
+				<view class="tj-item">
+					<text class="num">0</text>
+					<text>优惠券</text>
+				</view>
+				<view class="tj-item">
+					<text class="num">20</text>
+					<text>积分</text>
+				</view>
+			</view>
+			<view v-if="userDetail.flags == 2" class="tj-sction">
+			     <view class="tj-item">
+					<text class="num">0</text>
+					<text>优惠券</text>
+				</view>
+				<view class="tj-item">
+					<text class="num">20</text>
+					<text>积分</text>
+				</view>
+			</view>
+
+
+
 			<!-- 浏览历史 -->
 			<view v-if="userDetail.flags == 2" class="history-section icon">
 				<list-cell icon="icon-iconfontweixin" iconColor="#e07472" title="账本管理" @eventClick="navTo('/pages/account/account')"></list-cell>
@@ -385,7 +414,7 @@
 		background: #fff;
 		border-radius: 10upx;
 
-	/*	.sec-header {
+		/*	.sec-header {
 			display: flex;
 			align-items: center;
 			font-size: $font-base;
