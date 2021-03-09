@@ -4,7 +4,7 @@ from django.utils.deconstruct import deconstructible
 from rest_framework import serializers
 from rest_framework.utils.formatting import lazy_format
 
-from products.models import ProductModel, ProductCategoryModel, ProductUnitModel
+from products.models import ProductModel, ProductCategoryModel
 
 
 class ProductCategoriesReadonlySerializer(serializers.ModelSerializer):
@@ -16,7 +16,8 @@ class ProductCategoriesReadonlySerializer(serializers.ModelSerializer):
 
 class ProductsReadonlySerializer(serializers.ModelSerializer):
     weight = serializers.FloatField()
-    purchase_price = serializers.FloatField()
+    purchase_price_corporate = serializers.FloatField()
+    purchase_price_register = serializers.FloatField()
     retail_price = serializers.FloatField()
     flags = serializers.CharField(source='get_flags_display')
 
@@ -70,24 +71,10 @@ class ProductsSerializer(serializers.ModelSerializer):
     pic_url = IdUrlListField(child=IdUrlField(), allow_empty=True)
     carousal_urls = IdUrlListField(child=IdUrlField(), allow_empty=True)
     weight = serializers.FloatField()
-    purchase_price = serializers.FloatField()
+    purchase_price_corporate = serializers.FloatField()
+    purchase_price_register = serializers.FloatField()
     retail_price = serializers.FloatField()
 
     class Meta:
         model = ProductModel
-        fields = '__all__'
-
-
-class ProductUnitSerializer(serializers.ModelSerializer):
-    code = serializers.CharField()
-    purchase_price = serializers.FloatField()
-    retail_price = serializers.FloatField()
-    weight = serializers.FloatField()
-    unit = serializers.CharField()
-    point = serializers.IntegerField()
-    attributes = serializers.CharField()
-    description = serializers.CharField(allow_blank=True)
-
-    class Meta:
-        model = ProductUnitModel
         fields = '__all__'

@@ -16,7 +16,7 @@
 						<view class="right">
 							<text class="title clamp">{{item.product.name}}</text>
 							<view class="price-box">
-								<text class="price">￥{{item.purchase_price}}</text>
+								<text class="price">￥{{item.price}}</text>
 								<text class="number">x{{item.quantity}}</text>
 							</view>
 							<view class="price-box">
@@ -88,52 +88,43 @@
 
 			</view>
 		</view>
-		<view v-if="orderData.info.flags">
+		<!--<view v-if="orderData.info.flags">
 			<view v-if="flags_arr.indexOf(orderData.info.flags)!==-1" class="logistic-section">
 				<logistics :wlInfo="wlInfo" :address="address"></logistics>
 			</view>
-		</view>
+		</view>-->
 
 		<view class="page-bottom">
-
+			<!--未付款-->
 			<view v-if="orderData.info.flags===0" class="action-btn-group">
-				<button type="primary" class=" action-btn no-border buy-now-btn">
-					立即付款
-				</button>
-				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">取消订单</button>
+				<button type="primary" class=" action-btn no-border buy-now-btn" @click="payOrder(orderData)">立即付款</button>
+				<button type="primary" class=" action-btn no-border add-cart-btn" @click="cancelOrder(orderData)">取消订单</button>
 			</view>
+			<!--已付款-->
 			<view v-if="orderData.info.flags===1" class="action-btn-group">
-				<button type="primary" class=" action-btn no-border buy-now-btn">
-					申请退款
-				</button>
-				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">取消订单</button>
+				<button type="primary" class=" action-btn no-border buy-now-btn" @click='applyRefund'>申请退款</button>
+				<button type="primary" class=" action-btn no-border add-cart-btn" @click="cancelOrder">取消订单</button>
 			</view>
+			<!--已发货-->
 			<view v-if="orderData.info.flags===2" class="action-btn-group">
-				<button type="primary" class=" action-btn no-border buy-now-btn">
-					确认收货
-				</button>
-				<button type="primary" class=" action-btn no-border add-cart-btn" @click="addCart">申请退款</button>
+				<button type="primary" class=" action-btn no-border buy-now-btn" @click="confirm">确认收货</button>
+				<button type="primary" class=" action-btn no-border add-cart-btn" @click="applyRefund">申请退款</button>
 			</view>
+			<!--订单已完成-->
 			<view v-if="orderData.info.flags===3" class="action-btn-group">
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">
-					订单已完成
-				</button>
-
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">订单已完成</button>
 			</view>
+			<!--订单已经取消-->
 			<view v-if="orderData.info.flags===4" class="action-btn-group">
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">
-					订单已取消
-				</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">订单已取消</button>
 			</view>
+			<!--订单正在退款-->
 			<view v-if="orderData.info.flags===5" class="action-btn-group">
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">
-					退款进行中
-				</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款进行中</button>
 			</view>
+			<!--订单退款已经完成-->
 			<view v-if="orderData.info.flags===6" class="action-btn-group">
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">
-					退款已完成
-				</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款已完成</button>
 			</view>
 		</view>
 
@@ -296,7 +287,72 @@
 					})
 				}).catch((e) => {});
 
+			},
+			payOrder(item) {
+				let amount = item.info.amount;
+				let serial = item.info.serial_number;
+
+				uni.redirectTo({
+					url: `/pages/money/pay?source=1&amount=${amount}&serial=${serial}`
+				})
+			},
+			cancelOrder(item) {
+				//这里要加一个弹出界面提示一下
+				uni.showModal({
+					title: "提示",
+					content: "是否要取消订单？",
+					success: function(res) {
+						return new Promise(resolve => {
+							uni.request({
+								header: {
+									"content-type": "application/json"
+								},
+								url: this.api.ApiRoot + "orders/" + item.info.id + "/",
+								data: {
+
+									"id": item.info.id,
+									"updated_at": item.info.updated_at,
+									"created_at": item.info.created_at,
+									"serial_number": item.info.serial_number,
+									"amount": item.info.amount,
+									"quantity": item.info.quantity,
+									"name": item.info.name,
+									"phone": item.info.phone,
+									"country": item.info.country,
+									"province": item.info.province,
+									"city": item.info.city,
+									"address": item.info.address,
+									"postcode": item.info.postcode,
+									"message": item.info.message,
+									"flags": 4,
+									"user": item.info.user
+								},
+								method: "PUT",
+								success(res) {
+									console.log(res);
+									uni.redirectTo({
+										url: `/pages/order/order`
+									})
+								},
+								fail(res) {
+									console.log(res)
+
+									uni.redirectTo({
+										url: `/pages/order/order`
+									})
+								}
+							})
+						}).catch((e) => {});
+
+
+					}
+				})
+
+
+
+
 			}
+
 
 		}
 	}
@@ -453,10 +509,7 @@
 				margin-left: 24upx;
 			}
 
-			/*.flags {
-				margin-right: 24upx;
-
-			}*/
+			
 		}
 
 
@@ -585,14 +638,14 @@
 		.action-btn-group {
 			display: flex;
 			height: 76upx;
-			/*border-radius: 100px;*/
+			border-radius: 100px;
 			overflow: hidden;
 			box-shadow: 0 20upx 40upx -16upx #fa436a;
 			box-shadow: 1px 2px 5px rgba(219, 63, 96, 0.4);
 			background: linear-gradient(to right, #ffac30, #fa436a, #F56C6C);
-			margin-right: 20upx;
+			margin-left: 20upx;
 			position: relative;
-
+		
 			&:after {
 				content: '';
 				position: absolute;
@@ -603,7 +656,7 @@
 				width: 0;
 				border-right: 1px solid rgba(255, 255, 255, .5);
 			}
-
+		
 			.action-btn {
 				display: flex;
 				align-items: center;
@@ -612,7 +665,7 @@
 				height: 100%;
 				font-size: $font-base;
 				padding: 0;
-				/*border-radius: 0;*/
+				border-radius: 0;
 				background: transparent;
 			}
 		}

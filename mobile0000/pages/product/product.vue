@@ -11,17 +11,25 @@
 		</view>
 
 		<view class="introduce-section">
-			<text class="title">{{productObj.name}}</text>
 
 			<view class="price-box" v-if="role==2">
-				<text class="price-tip">进货价格：¥</text>
-				<text class="price">{{productObj.purchase_price}}</text>
+				<text class="price-tip">¥</text>
+				<text class="price">{{productObj.purchase_price_register}}</text>
+			</view>
+			<view class="price-box" v-if="role==5">
+				<text class="price-tip">¥</text>
+				<text class="price">{{productObj.purchase_price_corporate}}</text>
 			</view>
 
-			<view class="price-box">
-				<text class="price-tip">建议零售价：¥</text>
+			<view class="price-box" v-if="role==0||role==1||role==3||role ==4">
+				<text class="price-tip">¥</text>
 				<text class="price">{{productObj.retail_price}}</text>
 			</view>
+
+
+
+			<text class="title">{{productObj.name}}</text>
+
 		</view>
 
 
@@ -40,7 +48,7 @@
 
 		</view>
 
-        
+
 		<view class="c-list">
 			<!--
 			<view class="c-row b-b" @click="toggleSpec">
@@ -89,6 +97,13 @@
 					<text>假一赔十 ·</text>
 				</view>
 			</view>
+			<view class="c-row b-b">
+				<text class="tit">运费</text>
+				<view class="bz-list con">
+					<text>¥30</text>
+					<text>单果</text>
+				</view>
+			</view>
 		</view>
 
 
@@ -117,9 +132,10 @@
 			</navigator>
 
 			<view class="action-btn-group">
-				<button v-if="role==2" type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateOrder">
+				<button v-if="role==2|| role ==5" type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateOrder">
 					立即购买
 				</button>
+
 				<button v-else type="primary" class=" action-btn no-border buy-now-btn" @click="goCreateIntention">
 					立即下单
 				</button>
@@ -153,7 +169,8 @@
 					id: '',
 					name: '榴莲',
 					weight: '',
-					purchase_price: 0,
+					purchase_price_corporate: 0,
+					purchase_price_register: 0,
 					retail_price: 0,
 					flag: 1,
 					name: 0,
@@ -161,15 +178,11 @@
 					pic_url: '',
 					carousal_urls: "",
 					description: "这是产品描述",
-					stock: 0
+					stock: 0,
+					point: 0
 				},
-
 				number: 1,
 				role: 0,
-
-
-
-
 			};
 		},
 
@@ -185,9 +198,9 @@
 				this.productObj.name = res.name;
 				this.productObj.category = res.category;
 				this.productObj.retail_price = res.retail_price;
-				this.productObj.purchase_price = res.purchase_price;
+				this.productObj.purchase_price_corporate = res.purchase_price_corporate;
 				this.productObj.flags = res.flags;
-
+				this.productObj.point = res.point;
 				var pic_array = res.carousal_urls.split(';');
 				pic_array.forEach(item => {
 					console.log(item);
@@ -210,10 +223,6 @@
 		},
 		methods: {
 
-
-
-
-
 			getGoodsDetail(id) {
 				let that = this;
 				return new Promise(resolve => {
@@ -233,25 +242,7 @@
 				}).catch((e) => {});
 
 			},
-			/*
-			getGoodUnit(id) {
-				let that = this;
-				return new Promise(resolve => {
-					uni.request({
-						header: {
-							"content-type": "application/x-www-form-urlencoded"
-						},
-						url: that.api.ApiRoot + "products/" + id + "/units/",
-						method: "GET",
-						success(res) {
-							resolve(res.data)
-						},
-						fail(res) {
-							console.log(res)
-						}
-					})
-				}).catch((e) => {});
-			},*/
+
 
 			//数量减一
 			cutNumber: function() {
@@ -283,12 +274,26 @@
 			//下单
 			goCreateOrder() {
 				if (this.submitCheck()) {
-					let that = this;
-					var total_price = this.productObj.purchase_price * this.number;
-					var num = this.number;
-					var total = Number(total_price.toFixed(2));
+					//注册用户下单
+					if (this.role == 2) {
+						let that = this;
+						var total_price = this.productObj.purchase_price_register * this.number;
+						var num = this.number;
+						var total = Number(total_price.toFixed(2));
+						var credits = this.productObj.point * this.number;
+						console.log("用户获得的积分为" + credits);
+					}
+					//加盟用户下单ssss
+					if (this.role == 5) {
+						let that = this;
+						var total_price = this.productObj.purchase_price_corporate * this.number;
+						var num = this.number;
+						var total = Number(total_price.toFixed(2));
+						var credits = this.productObj.point * this.number;
+						console.log("用户获得的积分为" + credits);
+					}
 					uni.navigateTo({
-						url: `/pages/order/createOrder?source=1&total=${total}&quantity=${num}&product=${encodeURIComponent(JSON.stringify(this.productObj))}`
+						url: `/pages/order/createOrder?source=1&total=${total}&credits=${credits}&quantity=${num}&product=${encodeURIComponent(JSON.stringify(this.productObj))}`
 					})
 				}
 
@@ -305,11 +310,6 @@
 					})
 
 				}
-			},
-			//在这里将单品加入订单信息
-			confirmProductUnit() {
-
-
 			},
 
 			//加入购物车
@@ -425,7 +425,7 @@
 		}
 
 		.price {
-			font-size: $font-lg + 2upx;
+			font-size: $font-lg + 4upx;
 		}
 
 		.m-price {
@@ -629,7 +629,7 @@
 			padding-left: 10upx;
 		}
 
-		.item-list {   
+		.item-list {
 			padding: 20upx 0 0;
 			display: flex;
 			flex-wrap: wrap;

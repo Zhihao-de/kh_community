@@ -14,8 +14,10 @@
 							<text class="title">{{ titem.name }}</text>
 							<text class="title"></text>
 							<text class="title"></text>
-							<text v-if="role==2" class="price">{{titem.purchase_price}}</text>
-							<text v-else class="price">{{titem.retail_price}}</text>
+							<text v-if="role==2" class="price">{{titem.purchase_price_register}}</text>
+							<text v-if="role==5" class="price">{{titem.purchase_price_corporate}}</text>
+							<text v-if="role==0||role==1||role==3||role ==4" class="price">{{titem.retail_price}}</text>
+
 						</view>
 					</view>
 				</view>

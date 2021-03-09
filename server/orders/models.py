@@ -17,6 +17,9 @@ class OrderModel(models.Model):
     amount = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='订单金额')
     tare = models.DecimalField(max_digits=14, decimal_places=2, default=0.000, verbose_name='毛重')
     quantity = models.SmallIntegerField(default=0, verbose_name='商品数量')
+    credit = models.IntegerField(default=0, verbose_name='订单总积分')
+    freight = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='运费')
+
     # 物流信息
     name = models.CharField(max_length=16, verbose_name='收货人姓名')
     phone = models.CharField(max_length=16, verbose_name='收货人联系电话')
@@ -98,7 +101,7 @@ class OrderDetailModel(models.Model):
     order = models.ForeignKey(OrderModel, on_delete=models.CASCADE, verbose_name='关联订单')
     product = models.ForeignKey(ProductModel, on_delete=models.DO_NOTHING, verbose_name='关联产品')
     # productUnit = models.ForeignKey(ProductUnitModel, on_delete=models.DO_NOTHING, verbose_name='关联产品SKU')
-    purchase_price = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='交易单价元')
+    price = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='交易单价元')
     quantity = models.IntegerField(default=0, verbose_name='商品数量')
 
     class Meta:

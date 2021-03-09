@@ -789,7 +789,7 @@
 			background: linear-gradient(to right, #ffac30, #fa436a, #F56C6C);
 			margin-left: 20upx;
 			position: relative;
-
+		
 			&:after {
 				content: '';
 				position: absolute;
@@ -800,7 +800,7 @@
 				width: 0;
 				border-right: 1px solid rgba(255, 255, 255, .5);
 			}
-
+		
 			.action-btn {
 				display: flex;
 				align-items: center;

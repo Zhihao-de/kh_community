@@ -58,18 +58,18 @@ def wechat_login(request):
             flags = user_details["flags"]
             print(user_details)
             # 当flags=2时表示是开皇用户
-            if flags == 2:
-                res = {
-                    'errno': response_code.IS_SUCCESS,
-                    'statusCode': 200,
-                    'errMsg': '登录成功',
-                    'userInfo': userInfo,
-                    "openId": weixin_openid,
-                    "userDetail": user_details,
-                    "role": 2
-                }
+            # if flags == 2:
+            res = {
+                'errno': response_code.IS_SUCCESS,
+                'statusCode': 200,
+                'errMsg': '登录成功',
+                'userInfo': userInfo,
+                "openId": weixin_openid,
+                "userDetail": user_details,
+                "role": 2
+            }
             # flags==1时候表示是加盟用户
-         
+            """
             else:
                 res = {
                     'errno': response_code.IS_SUCCESS,
@@ -80,6 +80,7 @@ def wechat_login(request):
                     "userDetail": user_details,
                     "role": flags
                 }
+                """
             return JsonResponse(res)
         except:
             # 表示是普通用户 而且还未申请

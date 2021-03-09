@@ -88,6 +88,7 @@ class OrderDetailsSerializer(serializers.ModelSerializer):
     商品订单详情数据的序列化器
     """
     product = OrderProductsSerializer(required=False, read_only=True)
+
     total_price = serializers.SerializerMethodField()
 
     def get_total_price(self, obj):
@@ -96,11 +97,12 @@ class OrderDetailsSerializer(serializers.ModelSerializer):
         :param obj: OrderDetail对象
         :return:
         """
-        return '%.02f' % (obj.purchase_price * obj.quantity)
+
+        return '%.02f' % (obj.price * obj.quantity)
 
     class Meta:
         model = OrderDetailModel
-        fields = ['id', 'product', 'purchase_price', 'quantity', 'total_price']
+        fields = ['id', 'product', 'price', 'quantity', 'total_price']
 
 
 class OrderDetailsFrontSerializer(serializers.ModelSerializer):

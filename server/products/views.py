@@ -70,14 +70,3 @@ class ProductsViewSet(viewsets.ModelViewSet):
     def retrieve(self, request, *args, **kwargs):
         return super().list(request, args, kwargs)
 
-
-class ProductUnitViewSet(viewsets.ModelViewSet):
-    queryset = ProductUnitModel.objects.all()
-    serializer_class = ProductUnitSerializer
-
-    def get_queryset(self):
-        """
-        获得queryset，url中需含 P<order_id> 参数，且设置basename
-        :return:
-        """
-        return ProductUnitModel.objects.filter(product=self.kwargs['product_id'])

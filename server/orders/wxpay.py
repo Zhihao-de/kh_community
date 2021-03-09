@@ -13,7 +13,6 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from middleware.RabbitMqClient import RabbitMqClient as rabbit
 from orders.models import OrderModel, OrderDetailModel, OrdersHistoryModel
 from orders.models import OrderTransactionModel
 from products.models import ProductModel
@@ -177,9 +176,10 @@ def payOrder(request):
     """
     send request to wechat pay and operate orders
     """
-
+    """
     client = rabbit()
     client.start_consume(pay_ready(), 'delay', 0)
+    """
     json_data = json.loads(request.body)
     user_code = json_data['code']
     serial = json_data['serial']
@@ -298,7 +298,7 @@ def wxpayback(request):
             details = OrderDetailModel.objects.filter(order_id=order.id)
 
             # 这里需要发一条消息
-
+            # 支付成功之后减库存
             for product_info in details:
                 pro = ProductModel.objects.get(id=product_info.product.id)
                 pro.stock = product_info.product.stock - product_info.quantity

@@ -13,6 +13,7 @@ class OrdersNumberPagination(PageNumberPagination):
     page_size_query_param = 'page_size'
     page_query_param = 'page'
 
+
 class OrdersViewSet(viewsets.ModelViewSet, OrderCreateModelMixin):
     queryset = OrderModel.objects.all()
     serializer_class = OrdersSerializer

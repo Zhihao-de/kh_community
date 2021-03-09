@@ -13,26 +13,28 @@
 			</view>
 			<view v-if="userDetail.flags==2" class="vip-card-box">
 				<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>
-				<!--<view class="b-btn">
-					查看状态
-				</view>-->
 				<view class="tit">
 					<text class="yticon icon-iLinkapp-"></text>
 					开皇注册用户
 				</view>
 			</view>
-
-			<view v-else class="vip-card-box">
+			<view v-if="userDetail.flags==0||userDetail.flags==1||userDetail.flags==3||userDetail.flags==4" class="vip-card-box">
 				<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>
-				<!--<view class="b-btn">
-					去申请
-				</view>-->
 				<view class="tit">
 					<text class="yticon icon-iLinkapp-" style="color: #555555;"></text>
 					普通用户
 				</view>
+			</view>
+			<view v-if="userDetail.flags==5" class="vip-card-box">
+				<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>
+
+				<view class="tit">
+					<text class="yticon icon-iLinkapp-" style="color: #555555;"></text>
+					加盟用户
+				</view>
 
 			</view>
+
 		</view>
 
 		<view class="cover-container" :style="[{
@@ -40,34 +42,36 @@
 				transition: coverTransition
 			}]"
 		 @touchstart="coverTouchstart" @touchmove="coverTouchmove" @touchend="coverTouchend">
-			<image class="arc" src="/static/arc.png"></image>
+			<!--<image class="arc" src="/static/arc.png"></image>-->
 
 
-
-			<view v-if="userDetail.flags == 1" class="tj-sction">
+			<view v-if="userDetail.flags == 1||userDetail.flags==0||userDetail.flags==3||userDetail.flags==4" class="tj-sction">
 				<view class="tj-item">
-					<text class="num">128.8</text>
+					<text class="num">20</text>
+					<text></text>
+				</view>
+			</view>
+			<view v-if="userDetail.flags === 2" class="tj-sction">
+				<view class="tj-item">
+					<text class="num">0</text>
+					<text>优惠券</text>
+				</view>
+				<view class="tj-item">
+					<text class="num">20</text>
+					<text>积分</text>
+				</view>
+			</view>
+			<view v-if="userDetail.flags === 5" class="tj-sction">
+				<view class="tj-item">
+					<text class="num">0</text>
 					<text>余额</text>
 				</view>
 				<view class="tj-item">
-					<text class="num">0</text>
-					<text>优惠券</text>
-				</view>
-				<view class="tj-item">
 					<text class="num">20</text>
 					<text>积分</text>
 				</view>
 			</view>
-			<view v-if="userDetail.flags == 2" class="tj-sction">
-			     <view class="tj-item">
-					<text class="num">0</text>
-					<text>优惠券</text>
-				</view>
-				<view class="tj-item">
-					<text class="num">20</text>
-					<text>积分</text>
-				</view>
-			</view>
+
 
 
 
@@ -78,8 +82,18 @@
 				<list-cell icon="icon-share" iconColor="#9789f7" title="订单管理" @eventClick="navTo('/pages/order/order')"></list-cell>
 				<list-cell icon="icon-pinglun-copy" iconColor="#ee883b" title="留言订单管理" @eventClick="navTo('/pages/intention/intention')"></list-cell>
 				<list-cell icon="icon-shoucang_xuanzhongzhuangtai" conColor="#7178ee" title="申请管理" @eventClick="navTo('/pages/application/application')"></list-cell>
+			
 			</view>
-			<view v-else class="history-section icon">
+			<view v-if="userDetail.flags == 5" class="history-section icon">
+				<list-cell icon="icon-iconfontweixin" iconColor="#e07472" title="账本管理" @eventClick="navTo('/pages/account/account')"></list-cell>
+				<list-cell icon="icon-dizhi" iconColor="#5fcda2" title="地址管理" @eventClick="navTo('/pages/address/address')"></list-cell>
+				<list-cell icon="icon-share" iconColor="#9789f7" title="订单管理" @eventClick="navTo('/pages/order/order')"></list-cell>
+				<list-cell icon="icon-pinglun-copy" iconColor="#ee883b" title="留言订单管理" @eventClick="navTo('/pages/intention/intention')"></list-cell>
+				<!--<list-cell icon="icon-shoucang_xuanzhongzhuangtai" conColor="#7178ee" title="申请管理" @eventClick="navTo('/pages/application/application')"></list-cell>-->
+			</view>
+
+
+			<view v-if="userDetail.flags == 1||userDetail.flags==0||userDetail.flags==3||userDetail.flags==4" class="history-section icon">
 				<list-cell icon="icon-dizhi" iconColor="#5fcda2" title="地址管理" @eventClick="navTo('/pages/address/address')"></list-cell>
 				<list-cell icon="icon-pinglun-copy" iconColor="#ee883b" title="留言订单管理" @eventClick="navTo('/pages/intention/intention_customer')"></list-cell>
 				<list-cell icon="icon-shoucang_xuanzhongzhuangtai" iconColor="#7178ee" title="申请管理" @eventClick="navTo('/pages/application/application')"></list-cell>
@@ -137,11 +151,16 @@
 			that.userDetail = uni.getStorageSync('userDetail');
 			that.role = uni.getStorageSync('userDetail').flags;
 			console.log("role");
+			console.log(that.role);
 			if (that.role == 2) {
 				this.role_sign = "开皇注册用户";
+			} else
+			if (that.role == 5) {
+				this.role_sign = "开皇加盟用户";
 			} else {
 				this.role_sign = "普通用户";
 			}
+
 
 			let term = uni.getStorageSync('userInfo');
 			console.log(term);
@@ -171,22 +190,12 @@
 		// #endif
 
 		methods: {
-
-			/**
-			 * 统一跳转接口,拦截未登录路由
-			 * navigator标签现在默认没有转场动画，所以用view
-			 */
-
 			//导航
 			navTo(res) {
 				uni.navigateTo({
 					url: res
 				})
-
 			},
-
-
-
 
 			//获取库中的用户信息
 			getMyData(openId) {
@@ -249,7 +258,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-
+   
 	%section {
 		display: flex;
 		justify-content: space-around;

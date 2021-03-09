@@ -20,8 +20,9 @@
 						</view>
 						<view class="item-right">
 							<text class="clamp title">{{item.product.name}}</text>
-							<text v-if="role==2" class="price">¥{{item.product.purchase_price}}</text>
-							<text v-else class="price">¥{{item.product.retail_price}}</text>
+							<text v-if="role==2" class="price">¥{{item.product.purchase_price_register}}</text>
+							<text v-if="role==5" class="price">¥{{item.product.purchase_price_corporate}}</text>
+							<text v-if="role==1||role==0||role==3||role==4" class="price">¥{{item.product.retail_price}}</text>
 							<uni-number-box class="step" :min=1 :max="item.product.stock" :value=item.quantity :index="index" @eventChange="numberChange"></uni-number-box>
 						</view>
 						<text class="del-btn yticon icon-fork" @click="deleteCartItem(index)"></text>
@@ -43,7 +44,9 @@
 						总价
 					</text>
 				</view>
-				<button v-if="role==2" type="primary" class="no-border confirm-btn" @click="goCreateOrder">去结算</button>
+				<button v-if="role==2 || role==5" type="primary" class="no-border confirm-btn" @click="goCreateOrder">去结算</button>
+
+
 				<button v-else type="primary" class="no-border confirm-btn" @click="goCreateIntention">去下单</button>
 			</view>
 		</view>
@@ -59,7 +62,7 @@
 		data() {
 			return {
 				role: 0,
-				quantity:0,
+				quantity: 0,
 				total: 0, //总价格
 				allChecked: false, //全选状态  true|false
 				empty: false, //空白页现实  true|false
@@ -160,7 +163,10 @@
 				list.forEach(item => {
 					if (item.checked == true) {
 						if (this.role == 2) {
-							total += item.product.purchase_price * item.quantity;
+							total += item.product.purchase_price_register * item.quantity;
+						} else if (this.role == 5) {
+							total += item.product.purchase_price_corporate * item.quantity;
+						
 						} else {
 							total += item.product.retail_price * item.quantity;
 						}
@@ -189,7 +195,12 @@
 				list.forEach(item => {
 					if (item.checked == true) {
 						quantity += item.quantity;
-						total += item.product.purchase_price * item.quantity;
+						if (this.role == 2) {
+							total += item.product.purchase_price_register * item.quantity;
+						}
+						if (this.role == 5) {
+							total += item.product.purchase_price_corporate * item.quantity;
+						}
 						current_order.push(item);
 					} else if (checked == true) {
 						checked = false;
@@ -197,23 +208,22 @@
 				})
 				//this.allChecked = checked;
 				this.total = Number(total.toFixed(2));
-				console.log("这里是总数量"+quantity);
+				console.log("这里是总数量" + quantity);
 				this.quantity = quantity;
 				uni.navigateTo({
 					url: `/pages/order/createOrder?source=0&quantity=${quantity}&total=${total}&data=${encodeURIComponent(JSON.stringify(current_order))}`
 				})
 				//从cartlist中移除选中的项目
-				this.cartList.forEach((item,index) => {
-						if (item.checked == true) {
-							this.cartList.splice(index,1);
-							
-						}
+				this.cartList.forEach((item, index) => {
+					if (item.checked == true) {
+						this.cartList.splice(index, 1);
+
 					}
-				)
+				})
 				this.allChecked = false;
-				this.total=0;
-				uni.setStorageSync('cart',this.cartList);
-				
+				this.total = 0;
+				uni.setStorageSync('cart', this.cartList);
+
 			},
 			//前往留言订单创建页面
 			goCreateIntention() {
@@ -242,16 +252,15 @@
 					url: `/pages/order/createIntention?source=0&total=${total}&quantity=${quantity}&data=${encodeURIComponent(JSON.stringify(current_intention))}`
 				})
 				//从cartlist中移除选中的项目
-				this.cartList.forEach((item,index) => {
-						if (item.checked == true) {
-							this.cartList.splice(index,1);
-						}
+				this.cartList.forEach((item, index) => {
+					if (item.checked == true) {
+						this.cartList.splice(index, 1);
 					}
-				)
+				})
 				this.allChecked = false;
-				this.total=0;
-				uni.setStorageSync('cart',this.cartList);
-				
+				this.total = 0;
+				uni.setStorageSync('cart', this.cartList);
+
 
 			}
 

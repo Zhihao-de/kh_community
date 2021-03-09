@@ -46,7 +46,8 @@
 						<view class="right">
 							<text class="title clamp">{{item.product.name}}</text>
 							<view class="price-box">
-								<text class="price">￥{{item.product.purchase_price}}</text>
+								<text v-if="role==2" class="price">￥{{item.product.purchase_price_register}}</text>
+								<text v-if="role==5" class="price">￥{{item.product.purchase_price_corporate}}</text>
 								<text class="number">x{{item.quantity}}</text>
 							</view>
 
@@ -64,12 +65,16 @@
 				<text class="cell-tip">￥{{amount}}</text>
 			</view>
 			<view class="yt-list-cell b-b">
-				<text class="cell-tit clamp">优惠金额</text>
+				<text class="cell-tit clamp">可获得积分</text>
+				<text class="cell-tip">￥{{credits}}</text>
+			</view>
+			<view class="yt-list-cell b-b">
+				<text class="cell-tit clamp">积分抵扣</text>
 				<text class="cell-tip red">-￥35</text>
 			</view>
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">运费</text>
-				<text class="cell-tip">免运费</text>
+				<text class="cell-tip">￥30</text>
 			</view>
 
 			<view class="yt-list-cell desc-cell">
@@ -88,7 +93,7 @@
 			<text class="submit" @click="submit">提交订单</text>
 		</view>
 
-	</view>  
+	</view>
 </template>
 
 <script>
@@ -103,6 +108,7 @@
 				amount: 0.00,
 				//商品总数量
 				quantity: 0,
+				credits: 0,
 				contact_name: '',
 				contact_phone: '',
 				country: '',
@@ -134,7 +140,9 @@
 
 				var product_data = JSON.parse(decodeURIComponent(options.product));
 				var number = options.quantity;
+				var credits = options.credits;
 				console.log(product_data)
+				console.log(options.credits)
 				console.log(options.quantity)
 				console.log(options.total)
 
@@ -146,10 +154,12 @@
 				this.cartList.push(term);
 				this.amount = options.total;
 				this.quantity = options.quantity;
+				this.credits = options.credits;
 
 				//从购物车传来source==0
 			} else {
 				this.cartList = JSON.parse(decodeURIComponent(options.data));
+				this.credits = options.credits;
 				this.amount = options.total;
 				this.quantity = options.quantity;
 				this.user_id = uni.getStorageSync("userDetail").id;
@@ -207,6 +217,7 @@
 							"postcode": that.postcode,
 							"message": that.message,
 							"amount": that.amount,
+							"credits":that.credits,
 							"quantity": that.quantity,
 							"details": that.cartList
 

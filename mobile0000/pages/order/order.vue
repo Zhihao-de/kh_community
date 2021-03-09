@@ -25,7 +25,7 @@
 								<image class="goods-img" lazy-load="true" :src="goodsItem.product.pic_url || '/static/missing-face.png'" mode="aspectFill"></image>
 								<view class="right">
 									<text class="title clamp">{{goodsItem.product.name}}</text>
-									<text class="attr-box">{{goodsItem.purchase_price}} x {{goodsItem.quantity}}</text>
+									<text class="attr-box">{{goodsItem.price}} x {{goodsItem.quantity}}</text>
 									<text class="price">{{goodsItem.total_price}}</text>
 				
 									

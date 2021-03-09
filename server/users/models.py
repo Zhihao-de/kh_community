@@ -6,7 +6,7 @@ from django.db import models
 
 class UserModel(models.Model):
     """
-    用户表（用户是指普通客户通过申请流程完成注册后的客户，即开皇社区/开皇妈妈）
+    用户表（用户是指普通客户通过申请流程完成注册后的客户，即开皇社区/开皇妈妈，另外还有加盟用户）
     该表与django配套的auth_user表无关
     """
     wx_open_id = models.CharField(max_length=255, verbose_name='微信openid')
@@ -26,7 +26,12 @@ class UserModel(models.Model):
         (1, '待签协议'),
         (2, '已注册'),
         (3, '暂停'),
+        (4, '普通用户'),
+        (5, '加盟用户')
     ], verbose_name='用户状态')
+
+    credit = models.IntegerField(default=0, verbose_name='用户的积分')
+    balance = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='用户余额')
     logined_at = models.DateTimeField(auto_now_add=True, verbose_name='最后登录时间')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='最后更新时间')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
