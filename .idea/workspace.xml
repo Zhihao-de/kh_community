@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf70738-1423-4d20-9946-f39245f59e89" name="Default Changelist" comment="fix product info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/pages/cart/cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/cart/cart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/pages/category/category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/category/category.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/pages/money/pay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/money/pay.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/pages/order/createOrder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/order/createOrder.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/pages/product/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/product/product.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile0000/pages/user/user2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/pages/user/user2.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" afterDir="false" />
@@ -87,7 +88,10 @@
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picBack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/application/picFront.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/cart/cart.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/category/category.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/detail/detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/documents/documents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/index/index.js" afterDir="false" />
@@ -99,6 +103,7 @@
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/location/location.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/money.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/pay.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/paySuccess.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/payment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/money/refund.js" afterDir="false" />
@@ -107,7 +112,10 @@
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/createOrder.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/order.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderDetail.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/order/orderLogistic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/product/product.js" afterDir="false" />
@@ -119,6 +127,13 @@
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/pages/user/user2.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cart/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/Json.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/Json.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/attachment_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/attachment_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/intention_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/intention_api.js" afterDir="false" />
@@ -127,7 +142,9 @@
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/product_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/product_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/api/user_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/api/user_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/cms/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/cms/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/users/auth_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/users/auth_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/orders/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/orders/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +155,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kh_community$messageSender.coverage" NAME="messageSender Coverage Results" MODIFIED="1614588213859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/until" />
     <SUITE FILE_PATH="coverage/kh_community$MessageProducer.coverage" NAME="MessageProducer Coverage Results" MODIFIED="1614655497804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/until" />
+    <SUITE FILE_PATH="coverage/kh_community$test.coverage" NAME="test Coverage Results" MODIFIED="1615366023130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/util" />
     <SUITE FILE_PATH="coverage/kh_community$messageConsumer.coverage" NAME="messageConsumer Coverage Results" MODIFIED="1614655490910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server/until" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="kh_community" is-module-sdk="true" working-directory="$PROJECT_DIR$/server">
@@ -191,28 +209,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="1" />
-          <entry key="py" value="81" />
+          <entry key="py" value="159" />
           <entry key="svg" value="1" />
+          <entry key="vue" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="81" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="159" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="py" value="4431" />
-          <entry key="txt" value="118" />
+          <entry key="py" value="9560" />
+          <entry key="txt" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="129" />
-          <entry key="Python" value="4431" />
+          <entry key="PLAIN_TEXT" value="232" />
+          <entry key="Python" value="9560" />
         </counts>
       </usages-collector>
     </session>
@@ -220,34 +240,90 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/products/models.py">
+        <entry file="file://$PROJECT_DIR$/server/server/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-end-line="51" />
+            <state relative-caret-position="-109">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/products/views.py">
+        <entry file="file://$PROJECT_DIR$/server/orders/mixins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+            <state relative-caret-position="22">
+              <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
-                <marker date="1614935270116" expanded="true" signature="544:659" ph="..." />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/users/auth_views.py">
+        <entry file="file://$PROJECT_DIR$/server/orders/serizalizers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2156">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/util/FreightCalculator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding>
+                <marker date="1615365986961" expanded="true" signature="24:29" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/util/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/orders/wxpay.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2508">
+              <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1615281896020" expanded="true" signature="4741:4764" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/users/frontend_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-109">
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/users/backend_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -273,6 +349,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zhihao-de &lt;lizhihao@iscas.ac.cn&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -280,23 +361,39 @@
       <list>
         <option value="$PROJECT_DIR$/server/until/listen.py" />
         <option value="$PROJECT_DIR$/server/intentions/serializers.py" />
-        <option value="$PROJECT_DIR$/server/products/models.py" />
-        <option value="$PROJECT_DIR$/server/products/serializers.py" />
-        <option value="$PROJECT_DIR$/server/products/urls.py" />
         <option value="$PROJECT_DIR$/server/orders/frontend_urls.py" />
-        <option value="$PROJECT_DIR$/server/server/settings.py" />
         <option value="$PROJECT_DIR$/server/until/pika.py" />
         <option value="$PROJECT_DIR$/server/until/messageSender.py" />
         <option value="$PROJECT_DIR$/server/until/MessageProducer.py" />
         <option value="$PROJECT_DIR$/server/until/messageConsumer.py" />
-        <option value="$PROJECT_DIR$/server/orders/models.py" />
         <option value="$PROJECT_DIR$/server/orders/DelayMessageListener.py" />
         <option value="$PROJECT_DIR$/server/until/RabbitMqClient.py" />
-        <option value="$PROJECT_DIR$/server/orders/mixins.py" />
-        <option value="$PROJECT_DIR$/server/orders/wxpay.py" />
-        <option value="$PROJECT_DIR$/server/middleware/RabbitMqClient.py" />
-        <option value="$PROJECT_DIR$/server/products/views.py" />
+        <option value="$PROJECT_DIR$/server/middleware/RedisClient.py" />
         <option value="$PROJECT_DIR$/server/users/auth_views.py" />
+        <option value="$PROJECT_DIR$/server/products/views.py" />
+        <option value="$PROJECT_DIR$/server/products/urls.py" />
+        <option value="$PROJECT_DIR$/server/products/serializers.py" />
+        <option value="$PROJECT_DIR$/server/middleware/RabbitMqClient.py" />
+        <option value="$PROJECT_DIR$/server/orders/frontend_views.py" />
+        <option value="$PROJECT_DIR$/server/users/models.py" />
+        <option value="$PROJECT_DIR$/server/orders/CreditCalculator.py" />
+        <option value="$PROJECT_DIR$/server/products/models.py" />
+        <option value="$PROJECT_DIR$/server/orders/models.py" />
+        <option value="$PROJECT_DIR$/server/orders/wxpay.py" />
+        <option value="$PROJECT_DIR$/server/intentions/apps.py" />
+        <option value="$PROJECT_DIR$/server/cart/apps.py" />
+        <option value="$PROJECT_DIR$/server/server/settings.py" />
+        <option value="$PROJECT_DIR$/server/cart/urls.py" />
+        <option value="$PROJECT_DIR$/server/server/urls.py" />
+        <option value="$PROJECT_DIR$/server/cart/models.py" />
+        <option value="$PROJECT_DIR$/server/cart/serializers.py" />
+        <option value="$PROJECT_DIR$/server/cart/views.py" />
+        <option value="$PROJECT_DIR$/server/cart/mixin.py" />
+        <option value="$PROJECT_DIR$/server/orders/pointpay.py" />
+        <option value="$PROJECT_DIR$/server/util/FreightCalculator.py" />
+        <option value="$PROJECT_DIR$/server/util/test.py" />
+        <option value="$PROJECT_DIR$/server/orders/mixins.py" />
+        <option value="$PROJECT_DIR$/server/orders/serizalizers.py" />
       </list>
     </option>
   </component>
@@ -314,11 +411,11 @@
       <path value="$PROJECT_DIR$/server/cms/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="696" />
-    <option name="y" value="107" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="371" />
+    <option name="y" value="122" />
     <option name="width" value="1940" />
-    <option name="height" value="971" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -342,19 +439,26 @@
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
               <item name="kh_community" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="intentions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kh_community" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kh_community" type="b2602c69:ProjectViewProjectNode" />
@@ -400,7 +504,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MessageProducer">
+  <component name="RunManager" selected="Python.test">
     <configuration name="MessageProducer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kh_community" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -467,6 +571,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kh_community" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/util/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <module name="kh_community" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -519,9 +645,11 @@
       <item itemvalue="Python.messageSender" />
       <item itemvalue="Python.MessageProducer" />
       <item itemvalue="Python.messageConsumer" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.MessageProducer" />
         <item itemvalue="Python.messageConsumer" />
         <item itemvalue="Python.messageSender" />
@@ -574,7 +702,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614853077180</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix order fees">
+      <created>1615281901478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615281901478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="django environment">
+      <created>1615282368148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615282368148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -587,15 +729,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="696" y="107" width="1940" height="971" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22446808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994681" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33732057" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33659065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -604,13 +745,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295711" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159574" side_tool="true" weight="0.36124402" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840426" visible="true" weight="0.36124402" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840426" weight="0.32790446" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3213898" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32978722" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
@@ -627,14 +768,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295711" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159574" side_tool="true" visible="true" weight="0.36124402" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840426" visible="true" weight="0.36124402" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159574" side_tool="true" weight="0.36124402" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840426" visible="true" weight="0.33444077" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3213898" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32978722" />
       <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
@@ -645,151 +786,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="fix" />
     <MESSAGE value="2nd commit" />
     <MESSAGE value="add product info" />
     <MESSAGE value="add new features" />
     <MESSAGE value="add mq" />
-    <MESSAGE value="fix product info" />
     <MESSAGE value="fix button css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix button css" />
+    <MESSAGE value="fix product info and user info" />
+    <MESSAGE value="fix order fees" />
+    <MESSAGE value="fix product info" />
+    <MESSAGE value="django environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="django environment" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile0000/unpackage/dist/dev/mp-weixin/static/p.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/intentions/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/logistic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/celery.py" />
-    <entry file="file://$PROJECT_DIR$/server/orders/serizalizers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Program Files/conda/anaconda/envs/DJANGO/Lib/site-packages/rest_framework/routers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/frontend_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2002">
-          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <marker date="1614232803727" expanded="true" signature="2643:2980" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="45" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server/asgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tasks.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/until/pika.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/server/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -823,26 +835,6 @@
     <entry file="file://$PROJECT_DIR$/server/middleware/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="99" selection-start-line="99" selection-end-line="100" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="37" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/util/RabbitMqClient.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -864,67 +856,360 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/middleware/RabbitMqClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2112">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/wxpay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="191" column="9" selection-start-line="191" selection-start-column="9" selection-end-line="191" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1614850100488" expanded="true" signature="4804:4827" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/orders/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/middleware/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/middleware/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/models.py">
+    <entry file="file://$PROJECT_DIR$/server/middleware/RedisClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/products/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <marker date="1614935270116" expanded="true" signature="544:659" ph="..." />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/users/auth_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        <state relative-caret-position="-1829">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middleware/RabbitMqClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/response_code.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/frontend_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/file_uploader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="33" column="101" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/CreditCalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile0000/pages/cart/cart.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/frontend_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="14" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="71" column="62" lean-forward="true" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/products/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="47" column="86" lean-forward="true" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+            <marker date="1615188550289" expanded="true" signature="544:659" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/backend_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/frontend_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/frontend_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="41" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/intentions/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="67" column="32" lean-forward="true" selection-end-line="159" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <marker date="1615347441179" expanded="true" signature="356:428" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/mixin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1615361547993" expanded="true" signature="468:1298" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cart/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/backend_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/users/frontend_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/pointpay.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/wxpay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1615281896020" expanded="true" signature="4741:4764" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/util/FreightCalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1615365986961" expanded="true" signature="24:29" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/util/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/orders/serizalizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2156">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

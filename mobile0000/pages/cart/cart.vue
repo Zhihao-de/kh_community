@@ -166,7 +166,7 @@
 							total += item.product.purchase_price_register * item.quantity;
 						} else if (this.role == 5) {
 							total += item.product.purchase_price_corporate * item.quantity;
-						
+
 						} else {
 							total += item.product.retail_price * item.quantity;
 						}
@@ -190,6 +190,7 @@
 				}
 				let total = 0;
 				let quantity = 0;
+				let credits = 0;
 				let checked = true;
 				var current_order = [];
 				list.forEach(item => {
@@ -197,9 +198,11 @@
 						quantity += item.quantity;
 						if (this.role == 2) {
 							total += item.product.purchase_price_register * item.quantity;
+							credits += item.product.point* item.quantity;
 						}
 						if (this.role == 5) {
 							total += item.product.purchase_price_corporate * item.quantity;
+							credits += item.product.point* item.quantity;
 						}
 						current_order.push(item);
 					} else if (checked == true) {
@@ -211,7 +214,7 @@
 				console.log("这里是总数量" + quantity);
 				this.quantity = quantity;
 				uni.navigateTo({
-					url: `/pages/order/createOrder?source=0&quantity=${quantity}&total=${total}&data=${encodeURIComponent(JSON.stringify(current_order))}`
+					url: `/pages/order/createOrder?source=0&credits=${credits}&quantity=${quantity}&total=${total}&data=${encodeURIComponent(JSON.stringify(current_order))}`
 				})
 				//从cartlist中移除选中的项目
 				this.cartList.forEach((item, index) => {

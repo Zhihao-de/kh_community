@@ -272,7 +272,7 @@
 			padding-left: 30upx;
 
 			.title {
-				font-size: $font-base - 4upx;
+				font-size: $font-base - 6upx;
 				color: $font-color-dark;
 				height: 40upx;
 				line-height: 40upx;

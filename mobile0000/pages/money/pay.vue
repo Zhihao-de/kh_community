@@ -18,6 +18,17 @@
 					</radio>
 				</label>
 			</view>
+			<view class="type-item b-b" @click="changePayType(2)">
+				<text class="icon yticon icon-weixinzhifu"></text>
+				<view class="con">
+					<text class="tit">预付款支付</text>
+					<text>加盟用户用此方法更方便哦</text>
+				</view>
+				<label class="radio">
+					<radio value="" color="#fa436a" :checked='payType == 1' />
+					</radio>
+				</label>
+			</view>
 
 		</view>
 		<!--<text class="mix-btn" @click="confirm">确认支付</text>-->

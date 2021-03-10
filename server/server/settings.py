@@ -59,6 +59,8 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'intentions.apps.IntentionsConfig',
     'users.apps.UsersConfig',
+    'cart.apps.CartConfig'
+
 ]
 
 MIDDLEWARE = [

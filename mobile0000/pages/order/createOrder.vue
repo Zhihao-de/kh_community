@@ -66,7 +66,7 @@
 			</view>
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">可获得积分</text>
-				<text class="cell-tip">￥{{credits}}</text>
+				<text class="cell-tip">{{credits}}</text>
 			</view>
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">积分抵扣</text>
@@ -74,7 +74,12 @@
 			</view>
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">运费</text>
-				<text class="cell-tip">￥30</text>
+				<text class="cell-tip">￥{{freight}}</text>
+			</view>
+
+			<view class="yt-list-cell b-b">
+				<text class="cell-tit clamp">合计</text>
+				<text class="cell-tip">￥{{}}</text>
 			</view>
 
 			<view class="yt-list-cell desc-cell">
@@ -118,6 +123,8 @@
 				postcode: '',
 				//备注
 				message: '',
+				durian: 0,
+				freight: 0,
 
 			}
 		},
@@ -137,7 +144,6 @@
 		onLoad(options) {
 			//从商品页面传来的商品数据 source
 			if (options.source == 1) {
-
 				var product_data = JSON.parse(decodeURIComponent(options.product));
 				var number = options.quantity;
 				var credits = options.credits;
@@ -155,6 +161,28 @@
 				this.amount = options.total;
 				this.quantity = options.quantity;
 				this.credits = options.credits;
+
+				//计算榴莲的个数 因为要算运费（燕窝不用算 因为免运费）、
+				var durian_num = 0
+				for (let x in this.cartList) {
+					if (x.product.category in [3, 4, 5]) {
+						durian_num += x.quantity;
+					}
+				}
+				var freight = 0;
+				//计算运费
+
+				if (durian_num == 0) {
+					freight = 0;
+				} else if (durian_num == 1) {
+					freight = 30;
+				} else {
+					freight = 30 + 20 * (durian_num - 1);
+				}
+				this.freight = freight;
+
+
+
 
 				//从购物车传来source==0
 			} else {
@@ -187,6 +215,9 @@
 				return yyyyMMddHHmmss + "00001";
 
 			},
+
+
+
 			//提交订单
 			submit() {
 				var that = this
@@ -217,7 +248,7 @@
 							"postcode": that.postcode,
 							"message": that.message,
 							"amount": that.amount,
-							"credits":that.credits,
+							"credits": that.credits,
 							"quantity": that.quantity,
 							"details": that.cartList
 

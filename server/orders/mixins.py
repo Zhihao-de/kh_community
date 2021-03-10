@@ -36,18 +36,24 @@ class OrderCreateModelMixin:
                     detail.pop('checked')
             total_weight = 0
             total_credit = 0
+            durian_num = 0
 
+            delivery_fee = 0
             # create order details
             for detail in details:
                 product_id = detail.pop('product')["id"]
                 quantity = int(detail['quantity'])
                 product = ProductModel.objects.get(id=product_id)
+                if (product.category in [3, 4, 5]):
+                    durian_num += 1
 
                 # 产品减库存？？？？ 是否在这里减
                 # product.stock = product.stock - quantity
                 # product.save()
 
-                # 订单的毛重与积分
+                # 订单的毛重与积分与运费
+                # cal = FreightCalculator(durian_num)
+                # freight = cal.calculate()
                 total_weight = total_weight + quantity * product.weight
                 total_credit = total_credit + quantity * product.point
 

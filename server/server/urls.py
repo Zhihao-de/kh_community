@@ -24,6 +24,7 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from attachments import urls as attachments_urls
+from cart import urls as cart_urls
 from intentions import urls as intentions_urls
 from orders import urls as orders_urls
 from products import urls as products_urls
@@ -39,9 +40,11 @@ urlpatterns = \
         path('', TemplateView.as_view(template_name='index.html')),
         url(r'^v1/', include(attachments_urls)),
         url(r'^v1/', include(products_urls)),
+        url(r'^v1/', include(cart_urls)),
         url(r'^v1/', include(users_urls)),
         url(r'^v1/', include(orders_urls)),
         url(r'^v1/', include(intentions_urls)),
+
         url(r'media/files/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT})
 
     ] \
