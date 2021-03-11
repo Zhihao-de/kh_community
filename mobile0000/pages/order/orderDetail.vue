@@ -168,6 +168,7 @@
 					this.created_at = "暂无"
 				} else {
 					this.payType = await this.getPayType(trans[0].payment_method);
+					console.log("支付方式为:" + trans[0].payment_method)
 					this.transaction_id = trans[0].transaction_id;
 					this.created_at = trans[0].created_at;
 				}
@@ -198,16 +199,16 @@
 				});
 			},
 			getPayType(type) {
-				if (type === '0') {
+				if (type == '0') {
 					this.payType = '支付宝';
 
-				} else if (type = '1') {
+				} else if (type == '1') {
 					this.payType = '微信支付';
 
-				} else if (type === '2') {
-					this.payType = '银行卡';
+				} else if (type == '2') {
+					this.payType = '余额支付';
 
-				} else if (type === '3') {
+				} else if (type == '3') {
 					this.payType = '其他';
 				}
 
@@ -509,7 +510,7 @@
 				margin-left: 24upx;
 			}
 
-			
+
 		}
 
 
@@ -645,7 +646,7 @@
 			background: linear-gradient(to right, #ffac30, #fa436a, #F56C6C);
 			margin-left: 20upx;
 			position: relative;
-		
+
 			&:after {
 				content: '';
 				position: absolute;
@@ -656,7 +657,7 @@
 				width: 0;
 				border-right: 1px solid rgba(255, 255, 255, .5);
 			}
-		
+
 			.action-btn {
 				display: flex;
 				align-items: center;

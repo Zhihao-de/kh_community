@@ -18,23 +18,20 @@
 					</radio>
 				</label>
 			</view>
-			<view class="type-item b-b" @click="changePayType(2)">
-				<text class="icon yticon icon-weixinzhifu"></text>
+			<view v-if="role == 5" class="type-item" @click="changePayType(2)">
+				<text class="icon yticon icon-erjiye-yucunkuan"></text>
 				<view class="con">
-					<text class="tit">预付款支付</text>
-					<text>加盟用户用此方法更方便哦</text>
+					<text class="tit">预存款支付</text>
+					<text>可用余额 ¥{{balance}}</text>
 				</view>
 				<label class="radio">
-					<radio value="" color="#fa436a" :checked='payType == 1' />
+					<radio value="" color="#fa436a" :checked='payType == 2' />
 					</radio>
 				</label>
 			</view>
-
 		</view>
 		<!--<text class="mix-btn" @click="confirm">确认支付</text>-->
-		<text class="mix-btn" @click="confirm()">确认支付</text>
-
-
+		<text class="mix-btn" @click="confirm(payType)">确认支付</text>
 
 
 	</view>
@@ -47,10 +44,10 @@
 				payType: 1,
 				amount: 0,
 				user_id: 0,
-				serial: ""
-
-
-			};
+				serial: "",
+				role: 0,
+				balance: 0,
+			}
 		},
 
 		async onLoad(options) {
@@ -61,7 +58,12 @@
 				this.amount = amount;
 				let serial = options.serial;
 				this.serial = serial;
-				this.user_id = uni.getStorageSync("userDetails").id;
+				this.user_id = uni.getStorageSync("userDetail").id;
+				let role = uni.getStorageSync("userDetail").flags;
+				this.role = role;
+				if (role == 5) {
+					this.balance = uni.getStorageSync("userDetail").balance;
+				}
 
 			}
 			//这里是在查询订单页面 之后点击去付款时候 随后支付
@@ -85,10 +87,82 @@
 			changePayType(type) {
 				this.payType = type;
 			},
-
 			//确认支付
-			confirm: async function() {
-				console.log("发起支付");
+			//confirm: async function() {
+
+			//余额支付
+			confirm: function(type) {
+				if (type == 1) {
+					console.log("使用微信支付")
+					this.wxpay();
+				}
+				if (type == 2) {
+					console.log("使用余额支付")
+					this.balancepay();
+				}
+			},
+			balancepay() {
+				console.log("在这里使用余额支付")
+				let balance = this.balance;
+				let amount = this.amount;
+				var serial = this.serial;
+				console.log(serial)
+				let that = this;
+				uni.showModal({
+					title: "余额支付",
+					content: "将从余额扣除¥" + amount + "！",
+					success: function(res) {
+						if (res.confirm) {
+							console.log("确认支付，发起余额支付操作")
+							if (balance < amount) {
+								console.log("余额不足，请充值")
+							} else {
+								new Promise(resolve => {
+									uni.request({
+										header: {
+											"content-type": "application/json"
+										},
+										url: that.api.ApiRoot + "order/balancepay/",
+										data: {
+											'serial': serial,
+											'open_id': uni.getStorageSync("userDetail").wx_open_id,
+											'amount': amount,
+										},
+										method: "POST",
+										success(res) {
+											if (res.statusCode == 200) {
+												console.log('success:' + JSON.stringify(res))
+												uni.redirectTo({
+													url: `/pages/money/paySuccess`
+												})
+												return res
+											}
+
+										},
+										fail(res) {
+											console.log(res)
+											uni.showToast({
+												title: '当前出现问题请稍后再试',
+												icon: 'none',
+												duration: 2000
+											});
+										}
+									})
+								}).catch((e) => {});
+
+							}
+
+
+						} else if (res.cancel) {
+							console.log("用户点击取消")
+						}
+					}
+
+				})
+			},
+			//微信支付	
+			wxpay: async function() {
+				console.log("发起微信支付");
 				this.loading = true;
 				var serial = this.serial;
 				console.log(serial)
@@ -105,7 +179,7 @@
 									console.log("统一支付接口调用成功!")
 									console.log("下面是预支付信息");
 									console.log(res);
-   
+
 
 									uni.requestPayment({
 										provider: 'wxpay',
@@ -116,7 +190,7 @@
 										paySign: res.data.paySign,
 										success: function(res) {
 											console.log('success:' + JSON.stringify(res))
-											uni.redirectTo({   
+											uni.redirectTo({
 												url: `/pages/money/paySuccess`
 											})
 											return res
@@ -125,15 +199,15 @@
 										fail: function(res) {
 											console.log('fail:' + JSON.stringify(res))
 											return res;
-											uni.showModal({
-												content: '提示！',
-												title: '支付失败'
+											//uni.showModal({
+											//	content: '提示！',
+											//	title: '支付失败'
+											//})
+											uni.redirectTo({
+												url: `/pages/money/payFail`
 											})
 										}
 									})
-
-
-
 
 								} else {
 									console.log('统一支付接口调用失败！')
@@ -161,10 +235,8 @@
 					},
 					fail: function(res) {
 						console.log('fail:' + JSON.stringify(res))
-						return res;
-						uni.showModal({
-							content: '提示！',
-							title: '支付失败'
+						uni.redirectTo({
+							url: `/pages/money/payFail`
 						})
 					}
 				})

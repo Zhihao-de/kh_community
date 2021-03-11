@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<text class="success-icon yticon icon-xuanzhong2"></text>
-		<text class="tit">支付成功</text>
+		<text class="tit">支付失败</text>
 
 		<view class="btn-group">
 			<navigator url="/pages/order/order?state=0" open-type="redirect" class="mix-btn">查看订单</navigator>
@@ -9,7 +9,7 @@
 		</view>
 	</view>
 </template>
-
+  
 <script>
 	export default {
 		data() {

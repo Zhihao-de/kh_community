@@ -165,7 +165,9 @@
 				//计算榴莲的个数 因为要算运费（燕窝不用算 因为免运费）、
 				var durian_num = 0
 				for (let x in this.cartList) {
+					console.log("开始循环")
 					if (x.product.category in [3, 4, 5]) {
+						console.log(x.product.category)
 						durian_num += x.quantity;
 					}
 				}

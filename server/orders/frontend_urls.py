@@ -1,7 +1,7 @@
 from django.urls import re_path
 from rest_framework import routers
 
-from orders import frontend_views, wxpay, logistic
+from orders import frontend_views, wxpay, logistic, balancepay
 
 router = routers.DefaultRouter()
 
@@ -22,6 +22,9 @@ urlpatterns = [
     # 查看物流
     re_path(r'orders/logistic/$', logistic.get_route, name='route'),
     # 微信支付回调
-    re_path(r'orders/wxpayback/', wxpay.wxpayback, name='wxpayback')
+    re_path(r'orders/wxpayback/', wxpay.wxpayback, name='wxpayback'),
+    # 余额支付
+    re_path(r'order/balancepay/', balancepay.payOrder, name="balancepay")
+
 ]
 urlpatterns += router.urls

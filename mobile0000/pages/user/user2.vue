@@ -1,8 +1,6 @@
 <template>
 	<view class="container">
-
 		<view class="user-section">
-
 			<view class="user-info-box">
 				<view class="portrait-box">
 					<image class="portrait" :src="userInfo.avatarUrl"></image>
@@ -12,21 +10,21 @@
 				</view>
 			</view>
 			<view v-if="userDetail.flags==2" class="vip-card-box">
-				<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>
+				<!--<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>-->
 				<view class="tit">
 					<text class="yticon icon-iLinkapp-"></text>
 					开皇注册用户
 				</view>
 			</view>
 			<view v-if="userDetail.flags==0||userDetail.flags==1||userDetail.flags==3||userDetail.flags==4" class="vip-card-box">
-				<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>
+				<!--<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>-->
 				<view class="tit">
 					<text class="yticon icon-iLinkapp-" style="color: #555555;"></text>
 					普通用户
 				</view>
 			</view>
 			<view v-if="userDetail.flags==5" class="vip-card-box">
-				<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>
+				<!--<image class="card-bg" src="/static/vip-card-bg.png" mode=""></image>-->
 
 				<view class="tit">
 					<text class="yticon icon-iLinkapp-" style="color: #555555;"></text>
@@ -47,8 +45,8 @@
 
 			<view v-if="userDetail.flags == 1||userDetail.flags==0||userDetail.flags==3||userDetail.flags==4" class="tj-sction">
 				<view class="tj-item">
-					<text class="num">20</text>
-					<text></text>
+					<text class="num">先写个20吧</text>
+					<text>这也不知道放个啥</text>
 				</view>
 			</view>
 			<view v-if="userDetail.flags === 2" class="tj-sction">
@@ -57,17 +55,17 @@
 					<text>优惠券</text>
 				</view>
 				<view class="tj-item">
-					<text class="num">20</text>
+					<text class="num">{{userDetail.credit}}</text>
 					<text>积分</text>
 				</view>
 			</view>
 			<view v-if="userDetail.flags === 5" class="tj-sction">
 				<view class="tj-item">
-					<text class="num">0</text>
+					<text class="num">{{userDetail.balance}}</text>
 					<text>余额</text>
 				</view>
 				<view class="tj-item">
-					<text class="num">20</text>
+					<text class="num">{{userDetail.credit}}</text>
 					<text>积分</text>
 				</view>
 			</view>
@@ -82,7 +80,7 @@
 				<list-cell icon="icon-share" iconColor="#9789f7" title="订单管理" @eventClick="navTo('/pages/order/order')"></list-cell>
 				<list-cell icon="icon-pinglun-copy" iconColor="#ee883b" title="留言订单管理" @eventClick="navTo('/pages/intention/intention')"></list-cell>
 				<list-cell icon="icon-shoucang_xuanzhongzhuangtai" conColor="#7178ee" title="申请管理" @eventClick="navTo('/pages/application/application')"></list-cell>
-			
+
 			</view>
 			<view v-if="userDetail.flags == 5" class="history-section icon">
 				<list-cell icon="icon-iconfontweixin" iconColor="#e07472" title="账本管理" @eventClick="navTo('/pages/account/account')"></list-cell>
@@ -141,7 +139,9 @@
 					wx_avatar_url: "",
 					wx_name: "",
 					wx_open_id: "",
-					wx_union_id: ""
+					wx_union_id: "",
+					balance: 0,
+					credit: 0,
 				},
 
 			}
@@ -258,7 +258,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-   
+
 	%section {
 		display: flex;
 		justify-content: space-around;

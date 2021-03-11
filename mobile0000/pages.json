@@ -117,9 +117,6 @@
 				}
 			}
 		}, {
-			"path": "pages/money/money",
-			"style": {}
-		}, {
 			"path": "pages/order/createOrder",
 			"style": {
 				"navigationBarTitleText": "创建订单"
@@ -342,18 +339,16 @@
 				}
 			}
 
-		}
-
-        ,{
-            "path" : "pages/money/refund",
-            "style": {
-            	"navigationBarTitleText": "退款详情",
-            	"app-plus": {
-            		"bounce": "none"
-            	}
-            }
-            
+		},
+      {
+        "path": "pages/money/refund",
+        "style": {
+          "navigationBarTitleText": "退款详情",
+          "app-plus": {
+            "bounce": "none"
+          }
         }
+      }
     ],
 	"permission": {
 		"scope.userLocation": {
