@@ -60,18 +60,15 @@
 
 		<!-- 金额明细 -->
 		<view class="yt-list">
-			<view class="yt-list-cell b-b">
+			<view class="yt-list-cell ">
 				<text class="cell-tit clamp">商品金额</text>
 				<text class="cell-tip">￥{{amount}}</text>
 			</view>
-			<view class="yt-list-cell b-b">
-				<text class="cell-tit clamp">可获得积分</text>
-				<text class="cell-tip">{{credits}}</text>
-			</view>
-			<view class="yt-list-cell b-b">
+
+			<!--<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">积分抵扣</text>
 				<text class="cell-tip red">-￥35</text>
-			</view>
+			</view>-->
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">运费</text>
 				<text class="cell-tip">￥{{freight}}</text>
@@ -79,12 +76,16 @@
 
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">合计</text>
-				<text class="cell-tip">￥{{}}</text>
+				<text class="cell-tip">￥{{amount}}</text>
 			</view>
 
 			<view class="yt-list-cell desc-cell">
 				<text class="cell-tit clamp" v-model="amount">备注</text>
 				<input class="desc" type="text" v-model="message" placeholder="请填写备注信息" placeholder-class="placeholder" />
+			</view>
+			<view class="yt-list-cell ">
+				<text class="cell-tit clamp">可获得积分</text>
+				<text class="cell-tip">{{credits}}</text>
 			</view>
 		</view>
 
@@ -93,7 +94,7 @@
 			<view class="price-content">
 				<text>实付款</text>
 				<text class="price-tip">￥</text>
-				<text class="price">{{amount}}</text>
+				<text class="price">{{actual_payment}}</text>
 			</view>
 			<text class="submit" @click="submit">提交订单</text>
 		</view>
@@ -111,6 +112,7 @@
 				cartList: [],
 				//商品总金额
 				amount: 0.00,
+				actual_payment: 0.00,
 				//商品总数量
 				quantity: 0,
 				credits: 0,
@@ -125,6 +127,7 @@
 				message: '',
 				durian: 0,
 				freight: 0,
+
 
 			}
 		},
@@ -162,15 +165,22 @@
 				this.quantity = options.quantity;
 				this.credits = options.credits;
 
+
 				//计算榴莲的个数 因为要算运费（燕窝不用算 因为免运费）、
 				var durian_num = 0
-				for (let x in this.cartList) {
-					console.log("开始循环")
-					if (x.product.category in [3, 4, 5]) {
-						console.log(x.product.category)
-						durian_num += x.quantity;
+				for (var item in this.cartList) {
+					console.log("开始循环");
+					console.log(typeof(this.cartList[item].product.category));
+					console.log(this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[
+						item].product.category == 5);
+
+					if (this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[item].product.category == 5) {
+
+						console.log(this.cartList[item].quantity);
+						durian_num += this.cartList[item].quantity;
 					}
 				}
+				this.durian = durian_num;
 				var freight = 0;
 				//计算运费
 
@@ -182,6 +192,7 @@
 					freight = 30 + 20 * (durian_num - 1);
 				}
 				this.freight = freight;
+				this.actual_payment = Number(this.freight)+Number(this.amount);
 
 
 

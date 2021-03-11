@@ -19,6 +19,8 @@ class OrderModel(models.Model):
     quantity = models.SmallIntegerField(default=0, verbose_name='商品数量')
     credit = models.IntegerField(default=0, verbose_name='订单总积分')
     freight = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='运费')
+    actual_payment = models.DecimalField(max_digits=14, decimal_places=2, default=0.00, verbose_name='实付款')
+
 
     # 物流信息
     name = models.CharField(max_length=16, verbose_name='收货人姓名')
