@@ -121,24 +121,24 @@
 			</view>
 			<!--订单已完成-->
 			<view v-if="orderData.info.flags===3" class="action-btn-group">
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">订单已完成</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已完成</button>
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已付款</button>
 			</view>
 			<!--订单已经取消-->
 			<view v-if="orderData.info.flags===4" class="action-btn-group">
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">订单已取消</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已取消</button>
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">未付款</button>
 				
 			</view>
 			<!--订单正在退款-->
 			<view v-if="orderData.info.flags===5" class="action-btn-group">
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已付款</button>
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款进行中</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款中</button>
 			</view>
 			<!--订单退款已经完成-->
 			<view v-if="orderData.info.flags===6" class="action-btn-group">
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已付款</button>
-				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款已完成</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款完成</button>
 			</view>
 		</view>
 

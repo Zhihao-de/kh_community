@@ -176,7 +176,7 @@
 					name: 0,
 					title: 0,
 					pic_url: '',
-					carousal_urls: "",
+					carousal_urls: [],
 					description: "这是产品描述",
 					stock: 0,
 					point: 0
@@ -201,7 +201,7 @@
 				this.productObj.purchase_price_corporate = res.purchase_price_corporate;
 				this.productObj.flags = res.flags;
 				this.productObj.point = res.point;
-				var pic_array = res.carousal_urls.split(';');
+				var pic_array = res.carousal_urls.split(',');
 				pic_array.forEach(item => {
 					console.log(item);
 					console.log("ppppppp");
