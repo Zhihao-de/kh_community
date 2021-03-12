@@ -198,11 +198,11 @@
 						quantity += item.quantity;
 						if (this.role == 2) {
 							total += item.product.purchase_price_register * item.quantity;
-							credits += item.product.point* item.quantity;
+							credits += item.product.point * item.quantity;
 						}
 						if (this.role == 5) {
 							total += item.product.purchase_price_corporate * item.quantity;
-							credits += item.product.point* item.quantity;
+							credits += item.product.point * item.quantity;
 						}
 						current_order.push(item);
 					} else if (checked == true) {
@@ -216,13 +216,7 @@
 				uni.navigateTo({
 					url: `/pages/order/createOrder?source=0&credits=${credits}&quantity=${quantity}&total=${total}&data=${encodeURIComponent(JSON.stringify(current_order))}`
 				})
-				//从cartlist中移除选中的项目
-				this.cartList.forEach((item, index) => {
-					if (item.checked == true) {
-						this.cartList.splice(index, 1);
 
-					}
-				})
 				this.allChecked = false;
 				this.total = 0;
 				uni.setStorageSync('cart', this.cartList);
@@ -254,12 +248,19 @@
 				uni.navigateTo({
 					url: `/pages/order/createIntention?source=0&total=${total}&quantity=${quantity}&data=${encodeURIComponent(JSON.stringify(current_intention))}`
 				})
-				//从cartlist中移除选中的项目
-				this.cartList.forEach((item, index) => {
-					if (item.checked == true) {
-						this.cartList.splice(index, 1);
+
+				//删除购物车中的元素
+				var i = this.cartList.length;
+				while (i--) {
+					if (this.cartList[i].checked == true) {
+						console.log("删除了" + i);
+						this.cartList.splice(i, 1);
+
 					}
-				})
+				}
+
+
+
 				this.allChecked = false;
 				this.total = 0;
 				uni.setStorageSync('cart', this.cartList);

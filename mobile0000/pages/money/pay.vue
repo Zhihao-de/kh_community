@@ -2,7 +2,7 @@
 	<view class="app">
 		<view class="price-box">
 			<text>支付金额</text>
-			<text class="price">{{amount}}</text>
+			<text class="price">{{actual_payment}}</text>
 		</view>
 
 		<view class="pay-type-list">
@@ -47,6 +47,7 @@
 				serial: "",
 				role: 0,
 				balance: 0,
+				actual_payment: 0,
 			}
 		},
 
@@ -58,6 +59,8 @@
 				this.amount = amount;
 				let serial = options.serial;
 				this.serial = serial;
+				let actual_payment = options.actual_payment;
+				this.actual_payment = actual_payment;
 				this.user_id = uni.getStorageSync("userDetail").id;
 				let role = uni.getStorageSync("userDetail").flags;
 				this.role = role;
@@ -105,17 +108,24 @@
 				console.log("在这里使用余额支付")
 				let balance = this.balance;
 				let amount = this.amount;
+				let actual_payment = this.actual_payment;
 				var serial = this.serial;
+
 				console.log(serial)
 				let that = this;
 				uni.showModal({
 					title: "余额支付",
-					content: "将从余额扣除¥" + amount + "！",
+					content: "将从余额扣除¥" + actual_payment + "！",
 					success: function(res) {
 						if (res.confirm) {
 							console.log("确认支付，发起余额支付操作")
-							if (balance < amount) {
+							if (Number(balance) < Number(actual_payment)) {
 								console.log("余额不足，请充值")
+								uni.showToast({
+									title: "余额不足",
+									content: "余额不足，请充值",
+									duration: 6000
+								})
 							} else {
 								new Promise(resolve => {
 									uni.request({
@@ -127,6 +137,7 @@
 											'serial': serial,
 											'open_id': uni.getStorageSync("userDetail").wx_open_id,
 											'amount': amount,
+											'actual_payment': actual_payment
 										},
 										method: "POST",
 										success(res) {
@@ -217,6 +228,8 @@
 					}
 				})
 			},
+			
+			/*
 			wxpayment(data) {
 				uni.requestPayment({
 					provider: 'wxpay',
@@ -241,7 +254,7 @@
 					}
 				})
 
-			}
+			}*/
 		}
 	}
 </script>

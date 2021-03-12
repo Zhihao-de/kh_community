@@ -11,11 +11,11 @@
 						<text class="mobile" v-model="name">{{contact_phone}}</text>
 					</view>
 					<view class="address-box">
-						<text class="address-area" v-model="country"> {{province}} {{city}}</text>
+						<text class="address-area" v-model="country"> {{province}} {{city}} {{address}}</text>
 					</view>
-					<view class="address-box">
+					<!--<view class="address-box">
 						<text class="address-main" v-model="address">{{address}}</text>
-					</view>
+					</view>-->
 					<!--
 					<view class="address-box">
 						<text class="address-postcode" v-model="postcode">邮编：{{postcode}}</text>
@@ -78,15 +78,15 @@
 				<text class="cell-tit clamp">合计</text>
 				<text class="cell-tip">￥{{amount}}</text>
 			</view>
-
+			<view class="yt-list-cell b-b">
+				<text class="cell-tit clamp">可获得积分</text>
+				<text class="cell-tip">{{credits}}</text>
+			</view>
 			<view class="yt-list-cell desc-cell">
 				<text class="cell-tit clamp" v-model="amount">备注</text>
 				<input class="desc" type="text" v-model="message" placeholder="请填写备注信息" placeholder-class="placeholder" />
 			</view>
-			<view class="yt-list-cell ">
-				<text class="cell-tit clamp">可获得积分</text>
-				<text class="cell-tip">{{credits}}</text>
-			</view>
+
 		</view>
 
 		<!-- 底部 -->
@@ -174,7 +174,8 @@
 					console.log(this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[
 						item].product.category == 5);
 
-					if (this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[item].product.category == 5) {
+					if (this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[item].product
+						.category == 5) {
 
 						console.log(this.cartList[item].quantity);
 						durian_num += this.cartList[item].quantity;
@@ -192,7 +193,7 @@
 					freight = 30 + 20 * (durian_num - 1);
 				}
 				this.freight = freight;
-				this.actual_payment = Number(this.freight)+Number(this.amount);
+				this.actual_payment = Number(this.freight) + Number(this.amount);
 
 
 
@@ -204,6 +205,40 @@
 				this.amount = options.total;
 				this.quantity = options.quantity;
 				this.user_id = uni.getStorageSync("userDetail").id;
+
+
+
+				//计算榴莲的个数 因为要算运费（燕窝不用算 因为免运费）、
+				var durian_num = 0
+				for (var item in this.cartList) {
+					console.log("开始循环");
+					console.log(typeof(this.cartList[item].product.category));
+					console.log(this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[
+						item].product.category == 5);
+
+					if (this.cartList[item].product.category == 3 || this.cartList[item].product.category == 4 || this.cartList[item].product
+						.category == 5) {
+
+						console.log(this.cartList[item].quantity);
+						durian_num += this.cartList[item].quantity;
+					}
+				}
+				this.durian = durian_num;
+				var freight = 0;
+				//计算运费
+
+				if (durian_num == 0) {
+					freight = 0;
+				} else if (durian_num == 1) {
+					freight = 30;
+				} else {
+					freight = 30 + 20 * (durian_num - 1);
+				}
+				this.freight = freight;
+				this.actual_payment = Number(this.freight) + Number(this.amount);
+
+
+
 			}
 		},
 		methods: {
@@ -263,7 +298,9 @@
 							"amount": that.amount,
 							"credits": that.credits,
 							"quantity": that.quantity,
-							"details": that.cartList
+							"details": that.cartList,
+							"freight": that.freight,
+							"actual_payment": that.actual_payment
 
 						},
 						method: "POST",
@@ -272,13 +309,14 @@
 								console.log(res)
 								var amount = that.amount;
 								var serial = that.serial_number;
+								var actual_payment = that.actual_payment;
 								uni.showModal({
 									title: "提示",
 									content: "订单生成！",
 									success: function(res) {
 										if (res.confirm) {
 											uni.redirectTo({
-												url: `/pages/money/pay?source=1&amount=${amount}&serial=${serial}`
+												url: `/pages/money/pay?source=1&amount=${amount}&serial=${serial}&actual_payment=${actual_payment}`
 											})
 										} else if (res.cancel) {
 											uni.redirectTo({

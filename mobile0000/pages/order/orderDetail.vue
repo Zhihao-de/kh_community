@@ -41,6 +41,15 @@
 				<text class="cell-tit clamp">商品金额</text>
 				<text class="cell-tip">￥{{orderData.info.amount}}</text>
 			</view>
+			<view class="yt-list-cell b-b">
+				<text class="cell-tit clamp">运费</text>
+				<text class="cell-tip">￥{{orderData.info.freight}}</text>
+			</view>
+
+			<view class="yt-list-cell b-b">
+				<text class="cell-tit clamp">实付款</text>
+				<text class="cell-tip">￥{{orderData.info.actual_payment}}</text>
+			</view>
 
 			<view class="yt-list-cell b-b">
 				<text class="cell-tit clamp">创建时间</text>
@@ -113,17 +122,22 @@
 			<!--订单已完成-->
 			<view v-if="orderData.info.flags===3" class="action-btn-group">
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">订单已完成</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已付款</button>
 			</view>
 			<!--订单已经取消-->
 			<view v-if="orderData.info.flags===4" class="action-btn-group">
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">订单已取消</button>
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">未付款</button>
+				
 			</view>
 			<!--订单正在退款-->
 			<view v-if="orderData.info.flags===5" class="action-btn-group">
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已付款</button>
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款进行中</button>
 			</view>
 			<!--订单退款已经完成-->
 			<view v-if="orderData.info.flags===6" class="action-btn-group">
+				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">已付款</button>
 				<button type="primary" disabled="true" class=" action-btn no-border buy-now-btn">退款已完成</button>
 			</view>
 		</view>

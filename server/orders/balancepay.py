@@ -24,6 +24,7 @@ def payOrder(request):
     userObj = UserModel.objects.get(wx_open_id=open_id)
     # 订单需要支付的金额
     amount = decimal.Decimal(json_data['amount'])
+    actual_payment = decimal.Decimal(json_data['actual_payment'])
 
     if orderObj.flags != 0:
         res = {
@@ -35,7 +36,7 @@ def payOrder(request):
     if orderObj.flags == 0:
         with transaction.atomic():
             # 减少用户的余额
-            userObj.balance = userObj.balance - amount
+            userObj.balance = userObj.balance - actual_payment
 
             # 增加支付所产生的积分
             userObj.credit = userObj.credit + orderObj.credit
@@ -47,7 +48,7 @@ def payOrder(request):
             # 增加支付信息
             trans = OrderTransactionModel()
             trans.order = orderObj
-            trans.amount = amount
+            trans.amount = actual_payment
 
             trans.payment_method = 2
             uuid_value = uuid.uuid1()
@@ -62,7 +63,7 @@ def payOrder(request):
             # 增加订单历史
             OrdersHistoryModel.objects.create(
                 user=userObj,
-                list_amount=amount,
+                list_amount=actual_payment,
                 tare=orderObj.tare,
                 payment_method=2,
                 is_paid=True,

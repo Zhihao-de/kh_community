@@ -37,9 +37,17 @@
 						<view class="price-box">
 							共
 							<text class="num">{{item.info.quantity}}</text>
-							件商品 实付款
-							<text class="price">{{item.info.amount}}</text>
+							件商品 总计
+							<text class="price">{{item.info.actual_payment}}</text>
 						</view>
+						<!--<view class="price-box">
+							 运费
+							<text class="price">{{item.info.freight}}</text>
+						</view>
+						<view class="price-box">
+							 实付款
+							<text class="price">{{item.info.actual_payment}}</text>
+						</view>-->
 				
 
 						<view class="action-box b-t" v-if=" item.info.flags==0 ">

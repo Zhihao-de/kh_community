@@ -204,7 +204,8 @@ def payOrder(request):
     nonce_str = getNoceStr()
     out_trade_no = orderObj.serial_number
     spbill_create_ip = get_host_ip()
-    # total_fee = int(orderObj.amount * 100)
+    total_fee = int(orderObj.actual_payment * 100)
+
     total_fee = 1
     print('设置为支付1分钱')
     body_data = get_body_data(body, nonce_str, openid, out_trade_no, spbill_create_ip, total_fee)
